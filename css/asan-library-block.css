@@ -1,0 +1,352 @@
+/* ========================================
+   Библиотека Асан — Asan Library Block
+   ======================================== */
+
+.asan-library {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.asan-library__inner {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.asan-library__title {
+  text-align: center;
+  font-family: Jost Light, sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  color: #2D3B2A;
+  margin: 0 0 16px;
+}
+
+.asan-library__subtitle {
+  text-align: center;
+  font-family: Jost Light, sans-serif;
+  font-size: 20px;
+  color: #747D66;
+  margin: 0 0 8px;
+}
+
+.asan-library__desc {
+  text-align: center;
+  font-family: Jost Light, sans-serif;
+  font-size: 16px;
+  color: #747D66;
+  line-height: 1.4;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+/* ─── Tabs ─── */
+.asan-library__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.asan-library__tab {
+  background: rgba(137, 161, 171, 0.3);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 28px;
+  font-family: Jost Light, sans-serif;
+  font-size: 16px;
+  color: #2D3B2A;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.asan-library__tab:hover {
+  background: rgba(137, 161, 171, 0.5);
+}
+
+.asan-library__tab--active {
+  background: #3A4A35 !important;
+  color: #fff;
+}
+
+/* ─── Content ─── */
+.asan-library__content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.asan-library__photo-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 460px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.asan-library__photo {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.asan-library__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #fff;
+  color: #2D3B2A;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-family: Jost Light, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.asan-library__video-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: #fff;
+  color: #2D3B2A;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-family: Jost Light, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+
+.asan-library__video-btn:hover {
+  background: #f0f0f0;
+}
+
+.asan-library__video-btn::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent #2D3B2A;
+}
+
+/* ─── Text side ─── */
+.asan-library__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.asan-library__name-ru {
+  font-family: Jost Light, sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  color: #2D3B2A;
+  margin: 0 0 4px;
+}
+
+.asan-library__name-lat {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 18px;
+  color: #89A1AB;
+  margin: 0 0 20px;
+}
+
+.asan-library__meta {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.asan-library__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Jost Light, sans-serif;
+  font-size: 14px;
+  color: #747D66;
+}
+
+.asan-library__meta-item::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #89A1AB;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.asan-library__effect {
+  font-family: Jost Light, sans-serif;
+  font-size: 16px;
+  color: #2D3B2A;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+/* ─── Steps ─── */
+.asan-library__steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.asan-library__step {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: Jost Light, sans-serif;
+  font-size: 15px;
+  color: #2D3B2A;
+  line-height: 1.4;
+}
+
+.asan-library__step-num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: rgba(137, 161, 171, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Jost Medium, sans-serif;
+  font-size: 14px;
+  color: #2D3B2A;
+  margin-top: 2px;
+}
+
+.asan-library__step-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ─── Divider ─── */
+.asan-library__divider {
+  border: none;
+  border-top: 1px solid rgba(137, 161, 171, 0.3);
+  margin: 32px 0;
+}
+
+/* ─── Nav buttons ─── */
+.asan-library__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.asan-library__nav-btn {
+  background: rgba(137, 161, 171, 0.3);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 32px;
+  font-family: Jost Light, sans-serif;
+  font-size: 15px;
+  color: #2D3B2A;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.asan-library__nav-btn:hover {
+  background: rgba(137, 161, 171, 0.5);
+}
+
+.asan-library__nav-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1240px) {
+  .asan-library__photo-wrapper {
+    width: 380px;
+  }
+  .asan-library__photo {
+    height: 460px;
+  }
+}
+
+@media (max-width: 900px) {
+  .asan-library__content {
+    flex-direction: column;
+  }
+  .asan-library__photo-wrapper {
+    width: 100%;
+  }
+  .asan-library__photo {
+    height: 400px;
+  }
+  .asan-library__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .asan-library {
+    padding: 48px 0;
+  }
+  .asan-library__title {
+    font-size: 28px;
+  }
+  .asan-library__subtitle {
+    font-size: 16px;
+  }
+  .asan-library__desc {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  .asan-library__tabs {
+    gap: 8px;
+  }
+  .asan-library__tab {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  .asan-library__photo {
+    height: 300px;
+  }
+  .asan-library__name-ru {
+    font-size: 26px;
+  }
+  .asan-library__name-lat {
+    font-size: 16px;
+  }
+  .asan-library__meta {
+    gap: 16px;
+  }
+  .asan-library__step {
+    font-size: 14px;
+  }
+  .asan-library__nav-btn {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+}
+
+@media (max-width: 460px) {
+  .asan-library__tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .asan-library__tab {
+    text-align: center;
+  }
+  .asan-library__photo {
+    height: 240px;
+  }
+  .asan-library__meta {
+    flex-wrap: wrap;
+  }
+}

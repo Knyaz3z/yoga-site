@@ -1,0 +1,231 @@
+.hatha {
+
+}
+
+.hatha__head {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 100px;
+  color: #C1A21B;
+  text-align: center;
+}
+
+
+.hatha__desc {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.hatha__photos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hatha__photos-item {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.hatha__pic-explain {
+  margin-top: 50px !important;
+  position: relative;
+  height: 538px;
+}
+
+.hatha__sun-moon {
+  width: 878px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.hatha__explain-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 342px;
+}
+
+.hatha__explain-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 342px;
+  text-align: right;
+}
+
+/* ========================================
+   Tablet / Medium: 1240px
+   ======================================== */
+
+@media (max-width: 1240px) {
+  .hatha__head {
+    font-size: 80px;
+  }
+
+  .hatha__photos-item {
+    width: 200px;
+  }
+
+  .hatha__pic-explain {
+    height: 420px;
+    margin-top: 40px;
+  }
+
+  .hatha__sun-moon {
+    width: 680px;
+  }
+
+  .hatha__explain-1,
+  .hatha__explain-2 {
+    width: 260px;
+  }
+
+  .hatha__explain-1 {
+    font-size: 16px;
+  }
+
+  .hatha__explain-2 {
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   Small desktop / Large tablet: 900px
+   ======================================== */
+
+@media (max-width: 900px) {
+  .hatha__head {
+    font-size: 60px;
+  }
+
+  .hatha__desc {
+    font-size: 17px;
+    padding-bottom: 24px;
+  }
+
+  .hatha__photos-item {
+    width: 170px;
+  }
+
+  .hatha__pic-explain {
+    height: 360px;
+    margin-top: 30px;
+  }
+
+  .hatha__sun-moon {
+    width: 560px;
+  }
+
+  .hatha__explain-1,
+  .hatha__explain-2 {
+    width: 220px;
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   Mobile: 768px
+   ======================================== */
+
+@media (max-width: 768px) {
+  .hatha__head {
+    font-size: 44px;
+  }
+
+  .hatha__desc {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .hatha__photos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hatha__photos-item {
+    width: calc(50% - 8px);
+    max-width: 210px;
+  }
+
+  .hatha__pic-explain {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .hatha__sun-moon {
+    position: static;
+    width: 300px;
+    transform: none;
+  }
+
+  .hatha__explain-1,
+  .hatha__explain-2 {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/* ========================================
+   Mobile: 460px
+   ======================================== */
+
+@media (max-width: 460px) {
+  .hatha__head {
+    font-size: 34px;
+  }
+
+  .hatha__desc {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+
+  .hatha__photos {
+    gap: 12px;
+  }
+
+  .hatha__photos-item {
+    width: calc(50% - 6px);
+    max-width: 190px;
+  }
+
+  .hatha__pic-explain {
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .hatha__sun-moon {
+    width: 240px;
+  }
+
+  .hatha__explain-1,
+  .hatha__explain-2 {
+    font-size: 13px;
+  }
+}
+
+/* ========================================
+   Mobile: 360px
+   ======================================== */
+
+@media (max-width: 360px) {
+  .hatha__head {
+    font-size: 28px;
+  }
+
+  .hatha__photos-item {
+    width: 100%;
+    max-width: 250px;
+  }
+}

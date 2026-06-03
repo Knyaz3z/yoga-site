@@ -1,0 +1,220 @@
+/* ========================================
+   Форма записи + FAQ
+   ======================================== */
+
+.section-form-faq {
+  padding: 100px 0;
+  background: #FDFCF9;
+}
+
+.form-faq__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ----- FAQ ----- */
+.faq__title {
+  font-family: Jost Light, sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  color: #2D3B2A;
+  margin: 0 0 8px;
+}
+
+.faq__subtitle {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 16px;
+  color: #89A1AB;
+  margin: 0 0 36px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(45, 59, 42, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Jost Light, sans-serif;
+  font-size: 17px;
+  color: #2D3B2A;
+  text-align: left;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: #C1A21B;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-icon::before,
+.faq-icon::after {
+  content: '';
+  position: absolute;
+  background: #89A1AB;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-icon::before {
+  width: 2px;
+  height: 16px;
+}
+
+.faq-icon::after {
+  width: 16px;
+  height: 2px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 0;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding: 0 0 18px;
+}
+
+.faq-answer p {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 15px;
+  color: #5a6b57;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ----- Form ----- */
+.form-block {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 36px;
+  box-shadow: 0 4px 24px rgba(45, 59, 42, 0.06);
+}
+
+.form__title {
+  font-family: Jost Light, sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  color: #2D3B2A;
+  margin: 0 0 6px;
+}
+
+.form__subtitle {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 15px;
+  color: #89A1AB;
+  margin: 0 0 28px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 0 10px;
+  border: none;
+  border-bottom: 1.5px solid rgba(45, 59, 42, 0.15);
+  background: transparent;
+  font-family: Jost Light, sans-serif;
+  font-size: 16px;
+  color: #2D3B2A;
+  outline: none;
+  transition: border-color 0.25s;
+}
+
+.form-input::placeholder {
+  color: #b8c4b5;
+  font-family: Jost ExtraLight, sans-serif;
+}
+
+.form-input:focus {
+  border-color: #C1A21B;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 28px;
+  border: 1.5px solid #2D3B2A;
+  border-radius: 40px;
+  background: #2D3B2A;
+  color: #fff;
+  font-family: Jost Light, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-submit:hover {
+  background: transparent;
+  color: #2D3B2A;
+}
+
+.form-note {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 12px;
+  color: #b8c4b5;
+  text-align: center;
+  margin: 16px 0 0;
+  line-height: 1.4;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .section-form-faq {
+    padding: 60px 0;
+  }
+
+  .form-faq__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .form-block {
+    padding: 32px 24px;
+  }
+
+  .faq__title {
+    font-size: 28px;
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
+}
