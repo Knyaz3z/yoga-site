@@ -44,15 +44,13 @@
 }
 
 .first__item-head{
-  font-family: Jost Light, sans-serif;
+  font-family: Jost ExtraLight, sans-serif;
   font-size: 40px;
-  font-weight: 200;
   line-height: 100%;
   padding-bottom: 10px;
 }
 
 .first__item-text{
-  font-family: Jost Light, sans-serif;
   font-size: 20px;
   line-height: 100%;
 }
@@ -73,37 +71,9 @@
   padding: 30px 50px 0 0;
 }
 
-.first__form-input {
-  border-radius: 25px;
-  border: 1px solid #8B9980;
-  padding: 12px 25px;
-  font-family: Jost Light, sans-serif;
-  font-size: 16px;
-  color: #333;
-  outline: none;
-  transition: border-color .3s ease;
-}
 
-.first__form-input:focus {
-  border-color: #758568;
-}
 
-.first__form-submit {
-  background-color: #758568;
-  padding: 12px 25px;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-family: Jost Light, sans-serif;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background-color .3s ease, transform .2s ease;
-}
 
-.first__form-submit:hover {
-  background-color: #5d6e52;
-  transform: translateY(-1px);
-}
 
 .arrow__straight{
   position: absolute;
@@ -140,19 +110,19 @@
   }
 
   .first__form-input {
-    font-size: 15px;
-    padding: 10px 22px;
-  }
-
-  .first__form-submit {
-    font-size: 14px;
-    padding: 10px 22px;
+    padding: 10px 20px;
   }
 
   .arrow__straight {
     display: none;
   }
 }
+
+
+  .arrow__straight {
+    display: none;
+  }
+
 
 /* ========================================
    Small desktop / Large tablet: 900px
@@ -183,15 +153,11 @@
   }
 
   .first__form-input {
-    font-size: 14px;
-    padding: 10px 18px;
-  }
-
-  .first__form-submit {
-    font-size: 13px;
     padding: 10px 18px;
   }
 }
+
+
 
 /* ========================================
    Mobile: 768px
@@ -259,14 +225,9 @@
   }
 
   .first__form-input {
-    font-size: 13px;
-    padding: 8px 16px;
+    padding: 10px 18px;
   }
 
-  .first__form-submit {
-    font-size: 12px;
-    padding: 8px 16px;
-  }
 }
 
 /* ========================================
@@ -283,13 +244,8 @@
   }
 
   .first__form-input {
-    font-size: 12px;
     padding: 8px 14px;
   }
 
-  .first__form-submit {
-    font-size: 11px;
-    padding: 8px 14px;
-  }
 }
 

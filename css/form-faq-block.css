@@ -19,15 +19,13 @@
 
 /* ----- FAQ ----- */
 .faq__title {
-  font-family: Jost Light, sans-serif;
+  font-family: Jost ExtraLight, sans-serif;
   font-size: 36px;
-  font-weight: 200;
   color: #2D3B2A;
   margin: 0 0 8px;
 }
 
 .faq__subtitle {
-  font-family: Jost ExtraLight, sans-serif;
   font-size: 16px;
   color: #89A1AB;
   margin: 0 0 36px;
@@ -52,7 +50,6 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-family: Jost Light, sans-serif;
   font-size: 17px;
   color: #2D3B2A;
   text-align: left;
@@ -110,7 +107,6 @@
 }
 
 .faq-answer p {
-  font-family: Jost ExtraLight, sans-serif;
   font-size: 15px;
   color: #5a6b57;
   line-height: 1.6;
@@ -126,15 +122,13 @@
 }
 
 .form__title {
-  font-family: Jost Light, sans-serif;
+  font-family: Jost ExtraLight, sans-serif;
   font-size: 28px;
-  font-weight: 200;
   color: #2D3B2A;
   margin: 0 0 6px;
 }
 
 .form__subtitle {
-  font-family: Jost ExtraLight, sans-serif;
   font-size: 15px;
   color: #89A1AB;
   margin: 0 0 28px;
@@ -147,47 +141,15 @@
 
 .form-input {
   width: 100%;
-  padding: 14px 0 10px;
-  border: none;
-  border-bottom: 1.5px solid rgba(45, 59, 42, 0.15);
   background: transparent;
-  font-family: Jost Light, sans-serif;
-  font-size: 16px;
-  color: #2D3B2A;
-  outline: none;
-  transition: border-color 0.25s;
-}
-
-.form-input::placeholder {
-  color: #b8c4b5;
-  font-family: Jost ExtraLight, sans-serif;
-}
-
-.form-input:focus {
-  border-color: #C1A21B;
 }
 
 .form-submit {
   width: 100%;
   margin-top: 8px;
-  padding: 14px 28px;
-  border: 1.5px solid #2D3B2A;
-  border-radius: 40px;
-  background: #2D3B2A;
-  color: #fff;
-  font-family: Jost Light, sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.form-submit:hover {
-  background: transparent;
-  color: #2D3B2A;
 }
 
 .form-note {
-  font-family: Jost ExtraLight, sans-serif;
   font-size: 12px;
   color: #b8c4b5;
   text-align: center;

@@ -18,12 +18,9 @@
 
 .application__head{
   font-size: 70px;
-  font-family: Jost ExtraLight, sans-serif;
-
 }
 
 .application__desc{
-  font-family: Jost Light, sans-serif;
   font-size: 20px;
   width: 465px;
 }
@@ -35,22 +32,9 @@
   padding-top: 25px;
 }
 
-.application__input{
-  border-radius: 25px;
-  border: 1px solid black;
-  padding: 10px 25px 10px 25px;
-}
 
-.application__submit{
-  background-color: #758568;
-  padding: 10px 25px 10px 25px;
-  color: white;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  font-family: Jost Light, sans-serif;
-  font-size: 16px;
-}
+
+
 
 /* ========================================
    Tablet / Medium: 1240px
@@ -70,9 +54,6 @@
     font-size: 18px;
   }
 
-  .application__submit {
-    font-size: 15px;
-  }
 }
 
 /* ========================================
@@ -94,10 +75,6 @@
     font-size: 16px;
   }
 
-  .application__submit {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
 }
 
 /* ========================================
@@ -137,13 +114,8 @@
 
   .application__input {
     padding: 10px 20px;
-    font-size: 15px;
   }
 
-  .application__submit {
-    font-size: 14px;
-    padding: 12px 20px;
-  }
 }
 
 /* ========================================
@@ -152,7 +124,7 @@
 
 @media (max-width: 460px) {
   .application__wrapper {
-    margin-top: 40px;
+    margin-top: 0px;
     gap: 16px;
   }
 
@@ -169,14 +141,9 @@
   }
 
   .application__input {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 10px 18px;
   }
 
-  .application__submit {
-    font-size: 13px;
-    padding: 10px 16px;
-  }
 }
 
 /* ========================================
@@ -192,10 +159,6 @@
     font-size: 13px;
   }
 
-  .application__submit {
-    font-size: 12px;
-    padding: 10px 14px;
-  }
 }
 
 /* ========================================
@@ -212,14 +175,9 @@
   }
 
   .application__input {
-    padding: 8px 12px;
-    font-size: 13px;
+    padding: 8px 14px;
   }
 
-  .application__submit {
-    font-size: 11px;
-    padding: 8px 12px;
-  }
 }
 
 

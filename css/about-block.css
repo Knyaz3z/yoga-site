@@ -52,15 +52,11 @@
   gap: 20px;
 }
 
-h3 {
-  font-family: Jost ExtraLight, sans-serif;
+.about__content-text h3 {
   font-size: 30px;
-  font-weight: normal;
-
 }
 
 .about__text-item {
-  font-family: Jost ExtraLight, sans-serif;
   font-size: 20px;
 }
 
@@ -99,20 +95,7 @@ h3 {
 }
 
 .cta__button-green{
-  background-color: #2D3B2A;
-  color: white;
-  border-radius: 10px;
-
-  font-size: 30px;
-  font-family: Jost ExtraLight, sans-serif;
   max-width: 348px;
-  line-height: 94%;
-  letter-spacing: -0.04em;
-  padding: 16px 0 16px;
-}
-
-.cta__button-green:hover{
-  background-color: #242c1c;
 }
 
 /* ========================================
@@ -167,7 +150,6 @@ h3 {
 }
 
 .about__hello{
-  font-family: Jost ExtraLight, sans-serif;
   font-size: 20px;
   position: absolute;
   top: -30px;
@@ -238,9 +220,7 @@ h3 {
   }
 
   .cta__button-green {
-    font-size: 24px;
     max-width: 280px;
-    letter-spacing: 0;
   }
 
   .about__buttons-affirmation{
@@ -306,9 +286,7 @@ h3 {
   }
 
   .cta__button-green {
-    font-size: 20px;
     max-width: 240px;
-    padding: 14px 0;
   }
 }
 
@@ -379,9 +357,7 @@ h3 {
   }
 
   .cta__button-green {
-    font-size: 20px;
     max-width: 100%;
-    padding: 14px 0;
   }
 }
 
@@ -400,7 +376,7 @@ h3 {
 
   .about__hello {
     font-size: 12px;
-    max-width: 140px;
+    max-width: 200px;
   }
 
   .about__content {
@@ -421,7 +397,6 @@ h3 {
   }
 
   .cta__button-green {
-    font-size: 17px;
-    padding: 12px 0;
+    padding: 12px 28px;
   }
 }

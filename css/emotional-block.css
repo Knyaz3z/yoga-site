@@ -4,7 +4,6 @@
 }
 
 .added-text-1 {
-  font-family: Jost Light, sans-serif;
   position: absolute;
   top: -30px;
   white-space: nowrap;
@@ -18,7 +17,6 @@
 }
 
 .added-text-2 {
-  font-family: Jost Light, sans-serif;
   position: absolute;
   bottom: -30px;
   white-space: nowrap;

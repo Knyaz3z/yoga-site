@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .auverda__buttons-block {
@@ -131,7 +132,6 @@
 
 .charts__desc {
   font-size: 20px;
-  font-family: Jost ExtraLight, sans-serif;
   line-height: 100%;
   letter-spacing: 0.02em;
   transition: opacity 0.3s ease;
@@ -239,13 +239,11 @@
 .advices__header{
   font-weight: 200;
   font-size: 25px;
-  font-family: Jost Light, sans-serif;
   color: #2F430B;
   padding: 6px 0;
 }
 
 .advices__desc{
-  font-family: Jost Light, sans-serif;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0.02em;

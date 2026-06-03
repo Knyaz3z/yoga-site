@@ -247,3 +247,9 @@
 
   .padma-studio-name { grid-column: 1; margin-top: 48px; }
 }
+
+@media (max-width: 560px) {
+  .corner-mark{
+    display: none;
+  }
+}
