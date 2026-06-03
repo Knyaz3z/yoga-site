@@ -3,50 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Статья — Студия Йоги</title>
+  <meta name="description" content="Полезные статьи и техники хатха-йоги для начинающих и практикующих. Уроки дыхания, рекомендации по асанам и советы для осознанной практики.">
+  <title>Статьи и техники хатха-йоги | Блог — Padma Aksaya</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/form-faq-block.css">
+  <style>
+    .header-hero { background: #2D3B2A; position: fixed; z-index: 100; }
+    .header-hero .vk { filter: brightness(1) invert(0); }
+    .header-hero .vk:nth-child(3) { filter: brightness(0) invert(1); }
+    .blog-single { max-width: 800px; margin: 0 auto; padding: 120px 20px 60px; }
+    .blog-single__tag { font-family: Jost Light, sans-serif; font-size: 12px; color: #C1A21B; text-transform: uppercase; letter-spacing: 0.1em; }
+    .blog-single__title { font-family: Jost Medium, sans-serif; font-size: 36px; color: #2D3B2A; line-height: 1.2; margin: 10px 0 16px; }
+    .blog-single__meta { font-family: Jost ExtraLight, sans-serif; font-size: 14px; color: #9AAB95; margin-bottom: 40px; }
+    .blog-single__image { width: 100%; border-radius: 12px; margin-bottom: 40px; }
+    .blog-single__content p { font-family: Jost ExtraLight, sans-serif; font-size: 17px; line-height: 1.7; color: #3A4B35; margin-bottom: 20px; }
+    .blog-single__content h2 { font-family: Jost Medium, sans-serif; font-size: 24px; color: #2D3B2A; margin: 40px 0 16px; }
+    .blog-single__content h3 { font-family: Jost Medium, sans-serif; font-size: 20px; color: #2D3B2A; margin: 32px 0 12px; }
+    .blog-single__content ul { font-family: Jost ExtraLight, sans-serif; font-size: 17px; line-height: 1.7; color: #3A4B35; margin-bottom: 20px; padding-left: 24px; list-style-type: disc; }
+    .blog-single__back { font-family: Jost Light, sans-serif; font-size: 14px; color: #7A8B75; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+    .blog-single__back:hover { color: #2D3B2A; }
+    .blog-single__share { margin-top: 40px; padding-top: 30px; border-top: 1px solid #E0E5DD; display: flex; gap: 16px; align-items: center; }
+    .blog-single__share-label { font-family: Jost ExtraLight, sans-serif; font-size: 14px; color: #9AAB95; }
+    .blog-single__share-link { font-family: Jost Light, sans-serif; font-size: 14px; color: #5A6B55; text-decoration: none; }
+    .blog-single__share-link:hover { color: #2D3B2A; }
+  </style>
 </head>
 <body>
-  <header class="header"></header>
-  <main class="main">
-    <article class="blog-single"></article>
-  </main>
-  <footer class="footer">
-  <div class="footer__inner container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <span class="footer__logo">Padma Aksaya</span>
-        <span class="footer__tagline">Студия хатха-йоги</span>
-      </div>
-      <nav class="footer__nav">
-        <span class="footer__nav-title">Навигация</span>
-        <a href="../index.html" class="footer__nav-link">Главная</a>
-        <a href="../pages/about.html" class="footer__nav-link">Обо мне</a>
-        <a href="../pages/services.html" class="footer__nav-link">Услуги</a>
-        <a href="../pages/reviews.html" class="footer__nav-link">Отзывы</a>
-        <a href="../pages/gallery.html" class="footer__nav-link">Галерея</a>
-        <a href="../pages/blog.html" class="footer__nav-link">Статьи</a>
+  <header class="header-hero font-heading">
+    <div class="header__content container">
+      <button class="menu__button white__button">
+        <span class="menu__button-text">меню</span>
+        <span class="hamburger-icon hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="nav-overlay"></div>
+      <nav class="nav-menu">
+        <div class="nav-menu__inner">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item hidden">
+              <a href="../index.html" class="nav-menu__link">Главная</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="../pages/about.html" class="nav-menu__link">Обо мне</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="../pages/services.html" class="nav-menu__link">Услуги</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="../pages/reviews.html" class="nav-menu__link">Отзывы</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="../pages/gallery.html" class="nav-menu__link">Галерея</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="../pages/blog.html" class="nav-menu__link">Статьи</a>
+            </li>
+            <li class="nav-menu__item nav-menu__close hidden white__button">
+              <span class="nav-menu__close-text">закрыть</span>
+              <span class="nav-menu__close-icon"></span>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="footer__social">
-        <span class="footer__social-title">Соцсети</span>
-        <div class="footer__social-icons">
-          <a href="#" class="footer__social-link"><img src="../assets/icons/vk.svg" alt="VK"></a>
-          <a href="#" class="footer__social-link"><img src="../assets/icons/tg.svg" alt="Telegram"></a>
-          <a href="#" class="footer__social-link"><img src="../assets/icons/insta.svg" alt="Instagram"></a>
+      <div class="header__social">
+        <img src="../assets/icons/vk.svg" alt="VK" class="vk">
+        <img src="../assets/icons/tg.svg" alt="Telegram" class="vk">
+        <img src="../assets/icons/insta.svg" alt="Instagram" class="vk">
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <article class="blog-single">
+      <a href="../pages/blog.html" class="blog-single__back">&larr; Все статьи</a>
+      <div class="blog-single__tag">Практика</div>
+      <h1 class="blog-single__title">Как дышать в асанах: простые техники</h1>
+      <p class="blog-single__meta">Екатерина Сумникова · 5 минут чтения</p>
+      <img src="../assets/images/gallery/gallery_1.jpg" alt="Техники дыхания в асанах хатха-йоги" class="blog-single__image">
+
+      <div class="blog-single__content">
+        <p>Дыхание — это основа любой практики хатха-йоги. Без правильного дыхания асаны теряют свою глубину, а эффект от занятий становится поверхностным. В этой статье разберём простые техники дыхания, которые помогут вам углубить вашу практику.</p>
+
+        <h2>Почему дыхание важнее движения</h2>
+        <p>В хатха-йоге дыхание — это мост между телом и умом. Когда мы осознанно дышим, мы успокаиваем нервную систему, насыщаем кровь кислородом и учим тело расслабляться даже в сложных позах.</p>
+        <p>Многие новички задерживают дыхание в асанах, когда чувствуют напряжение. Это естественная реакция, которая только усиливает стресс. Задача практики — научиться дышать ровно и спокойно независимо от положения тела.</p>
+
+        <h2>Техника 1: Полное йоговское дыхание</h2>
+        <p>Это базовое дыхание, с которого стоит начать. Оно состоит из трёх фаз:</p>
+        <ul>
+          <li><strong>Брюшное дыхание</strong> — на вдохе живот мягко расширяется, на выдохе опускается</li>
+          <li><strong>Грудное дыхание</strong> — на вдохе расширяются рёбра, на выдохе возвращаются</li>
+          <li><strong>Ключичное дыхание</strong> — на вдохе поднимаются ключицы, на выдохе опускаются</li>
+        </ul>
+        <p>Попробуйте объединить все три фазы в один плавный вдох, а затем медленно выдохните в обратной последовательности.</p>
+
+        <h2>Техника 2: Дыхание уджайи</h2>
+        <p>Уджайи — это дыхание с лёгким сужением голосовой щели, создающее мягкий шипящий звук. Оно помогает контролировать длину и глубину дыхания, согревает тело и успокаивает ум.</p>
+        <p>Попробуйте на выдохе слегка сузить горло, как будто вы дышите на зеркало. Звук должен быть ровным и мягким, похожим на шум моря.</p>
+
+        <h2>Как дышать в асанах</h2>
+        <p>Главное правило: все движения выполняются на выдохе. На вдохе мы готовимся, на выдохе — углубляемся в позу. Это особенно важно в наклонах и скрутках.</p>
+        <p>Если чувствуете, что дыхание сбивается или становится поверхностным — значит, вы превысили свой комфортный уровень. Уменьшите интенсивность и вернитесь к ровному дыханию.</p>
+
+        <h2>Практический совет для начинающих</h2>
+        <p>Начните с 3-5 минут осознанного дыхания перед практикой. Сядьте удобно, закройте глаза и просто наблюдайте за своим естественным дыханием. Затем постепенно вводите техники полного дыхания и уджайи.</p>
+        <p>Регулярность здесь важнее длительности — 5 минут осознанного дыхания каждый день принесут больше пользы, чем час раз в неделю.</p>
+      </div>
+
+      <div class="blog-single__share">
+        <span class="blog-single__share-label">Поделиться:</span>
+        <a href="#" class="blog-single__share-link">VK</a>
+        <a href="#" class="blog-single__share-link">Telegram</a>
+      </div>
+    </article>
+
+    <section class="section-form-faq">
+      <div class="form-faq__grid">
+        <div class="form-block" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
+          <h2 class="form__title font-heading">Записаться на занятие</h2>
+          <p class="form__subtitle">Оставьте контакты — я свяжусь с вами в ближайшее время</p>
+          <form action="" novalidate>
+            <div class="form-group">
+              <input class="form-input input-pill" type="text" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+              <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+            </div>
+            <div class="form-group">
+              <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+            </div>
+            <button class="form-submit btn-primary" type="submit">Хочу на пробное</button>
+          </form>
+          <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">Padma Aksaya</span>
+          <span class="footer__tagline">Студия хатха-йоги</span>
+        </div>
+        <nav class="footer__nav">
+          <span class="footer__nav-title">Навигация</span>
+          <a href="../index.html" class="footer__nav-link">Главная</a>
+          <a href="../pages/about.html" class="footer__nav-link">Обо мне</a>
+          <a href="../pages/services.html" class="footer__nav-link">Услуги</a>
+          <a href="../pages/reviews.html" class="footer__nav-link">Отзывы</a>
+          <a href="../pages/gallery.html" class="footer__nav-link">Галерея</a>
+          <a href="../pages/blog.html" class="footer__nav-link">Статьи</a>
+        </nav>
+        <div class="footer__social">
+          <span class="footer__social-title">Соцсети</span>
+          <div class="footer__social-icons">
+            <a href="#" class="footer__social-link"><img src="../assets/icons/vk.svg" alt="VK"></a>
+            <a href="#" class="footer__social-link"><img src="../assets/icons/tg.svg" alt="Telegram"></a>
+            <a href="#" class="footer__social-link"><img src="../assets/icons/insta.svg" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Padma Aksaya</span>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+          <a href="#" class="footer__bottom-link">Договор оферты</a>
         </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>&copy; 2026 Padma Aksaya</span>
-      <div class="footer__bottom-links">
-        <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
-        <a href="#" class="footer__bottom-link">Договор оферты</a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
+
   <script src="../js/main.js"></script>
 </body>
 </html>

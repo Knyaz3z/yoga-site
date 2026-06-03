@@ -271,7 +271,7 @@ body {
   display: flex;
   gap: 8px;
   position: absolute;
-  top: 20px;
+  top: 16px;
   right: 10px;
   z-index: 2;
 }
@@ -289,7 +289,7 @@ body {
   position: absolute;
 
   left: 0px;
-  top: 18px;
+  top: 26px;
   z-index: 2;
   transition: opacity .3s ease, transform .5s ease;
 }
@@ -348,7 +348,7 @@ body {
 .nav-menu {
   position: absolute;
   left: 0px;
-  top: 18px;
+  top: 26px;
   color: white;
 }
 
@@ -670,7 +670,13 @@ body {
   font-size: 20px;
   line-height: 100%;
 }
-
+.h1{
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+  display: inline-block;
+}
 .hero__desc-but {
   border-radius: 40px;
   background-color: white;
@@ -978,4 +984,20 @@ body {
     width: 44px;
     height: 44px;
   }
+}
+
+/* ========================================
+   Form Validation
+   ======================================== */
+
+.form-input--invalid {
+  border-color: #e74c3c !important;
+}
+
+.form-field-error {
+  display: block;
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 4px;
+  line-height: 1.3;
 }

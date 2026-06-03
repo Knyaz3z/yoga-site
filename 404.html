@@ -3,50 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 — Страница не найдена</title>
+  <meta name="description" content="Страница не найдена. Вернитесь на главную студии хатха-йоги Padma Aksaya в Москве и начните свою практику с бесплатного занятия.">
+  <title>Страница не найдена (404) | Студия хатха-йоги Padma Aksaya</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-  <header class="header"></header>
-  <main class="main">
-    <section class="error-404"></section>
-  </main>
-  <footer class="footer">
-  <div class="footer__inner container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <span class="footer__logo">Padma Aksaya</span>
-        <span class="footer__tagline">Студия хатха-йоги</span>
-      </div>
-      <nav class="footer__nav">
-        <span class="footer__nav-title">Навигация</span>
-        <a href="index.html" class="footer__nav-link">Главная</a>
-        <a href="pages/about.html" class="footer__nav-link">Обо мне</a>
-        <a href="pages/services.html" class="footer__nav-link">Услуги</a>
-        <a href="pages/reviews.html" class="footer__nav-link">Отзывы</a>
-        <a href="pages/gallery.html" class="footer__nav-link">Галерея</a>
-        <a href="pages/blog.html" class="footer__nav-link">Статьи</a>
+  <header class="header-hero font-heading">
+    <div class="header__content container">
+      <button class="menu__button white__button">
+        <span class="menu__button-text">меню</span>
+        <span class="hamburger-icon hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="nav-overlay"></div>
+      <nav class="nav-menu">
+        <div class="nav-menu__inner">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item hidden">
+              <a href="index.html" class="nav-menu__link">Главная</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="pages/about.html" class="nav-menu__link">Обо мне</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="pages/services.html" class="nav-menu__link">Услуги</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="pages/reviews.html" class="nav-menu__link">Отзывы</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="pages/gallery.html" class="nav-menu__link">Галерея</a>
+            </li>
+            <li class="nav-menu__item hidden">
+              <a href="pages/blog.html" class="nav-menu__link">Статьи</a>
+            </li>
+            <li class="nav-menu__item nav-menu__close hidden white__button">
+              <span class="nav-menu__close-text">закрыть</span>
+              <span class="nav-menu__close-icon"></span>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="footer__social">
-        <span class="footer__social-title">Соцсети</span>
-        <div class="footer__social-icons">
-          <a href="#" class="footer__social-link"><img src="assets/icons/vk.svg" alt="VK"></a>
-          <a href="#" class="footer__social-link"><img src="assets/icons/tg.svg" alt="Telegram"></a>
-          <a href="#" class="footer__social-link"><img src="assets/icons/insta.svg" alt="Instagram"></a>
+      <div class="header__social">
+        <img src="assets/icons/vk.svg" alt="VK" class="vk">
+        <img src="assets/icons/tg.svg" alt="Telegram" class="vk">
+        <img src="assets/icons/insta.svg" alt="Instagram" class="vk">
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="error-404" style="padding: 120px 20px; text-align: center; min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <h1 style="font-family: Jost Medium, sans-serif; font-size: 120px; color: #2D3B2A; margin-bottom: 10px;">404</h1>
+      <p style="font-family: Jost Light, sans-serif; font-size: 24px; color: #5A6B55; margin-bottom: 8px;">Страница не найдена</p>
+      <p style="font-family: Jost ExtraLight, sans-serif; font-size: 16px; color: #7A8B75; max-width: 400px; margin-bottom: 30px;">
+        Возможно, страница была удалена или вы перешли по неверной ссылке.
+      </p>
+      <a href="index.html" class="btn-primary" style="display: inline-block; padding: 14px 36px; border-radius: 40px; background: #2D3B2A; color: white; text-decoration: none; font-family: Jost Light, sans-serif; font-size: 16px;">
+        На главную
+      </a>
+      <p style="font-family: Jost ExtraLight, sans-serif; font-size: 14px; color: #9AAB95; margin-top: 20px;">
+        Хатха-йога в Москве — студия Padma Aksaya
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">Padma Aksaya</span>
+          <span class="footer__tagline">Студия хатха-йоги</span>
+        </div>
+        <nav class="footer__nav">
+          <span class="footer__nav-title">Навигация</span>
+          <a href="index.html" class="footer__nav-link">Главная</a>
+          <a href="pages/about.html" class="footer__nav-link">Обо мне</a>
+          <a href="pages/services.html" class="footer__nav-link">Услуги</a>
+          <a href="pages/reviews.html" class="footer__nav-link">Отзывы</a>
+          <a href="pages/gallery.html" class="footer__nav-link">Галерея</a>
+          <a href="pages/blog.html" class="footer__nav-link">Статьи</a>
+        </nav>
+        <div class="footer__social">
+          <span class="footer__social-title">Соцсети</span>
+          <div class="footer__social-icons">
+            <a href="#" class="footer__social-link"><img src="assets/icons/vk.svg" alt="VK"></a>
+            <a href="#" class="footer__social-link"><img src="assets/icons/tg.svg" alt="Telegram"></a>
+            <a href="#" class="footer__social-link"><img src="assets/icons/insta.svg" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Padma Aksaya</span>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+          <a href="#" class="footer__bottom-link">Договор оферты</a>
         </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>&copy; 2026 Padma Aksaya</span>
-      <div class="footer__bottom-links">
-        <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
-        <a href="#" class="footer__bottom-link">Договор оферты</a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>

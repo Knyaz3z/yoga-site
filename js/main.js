@@ -13,7 +13,8 @@ const scripts = [
   '/js/padma-aksaya.js',
   '/js/asan-library.js',
   '/js/products.js',
-  '/js/scroll-top.js'
+  '/js/scroll-top.js',
+  '/js/forms-validation.js'
 ];
 
 scripts.forEach(src => {

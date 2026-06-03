@@ -52,7 +52,7 @@
 
 .asan-library__tab--active {
   background: #3A4A35 !important;
-  color: #fff;
+  color: #fff !important;
 }
 
 /* ─── Content ─── */
