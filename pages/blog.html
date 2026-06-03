@@ -3,17 +3,281 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Статьи — Студия Йоги</title>
+  <meta name="description" content="Авторские статьи о хатха-йоге: техники дыхания, утренние ритуалы, философия, аюрведа, медитация и истории практики. Блог Екатерины Сумниковой.">
+  <title>Статьи о хатха-йоге — Padma Aksaya | Блог Екатерины Сумниковой</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/form-faq-block.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/blog-page.css">
 </head>
 <body>
-  <header class="header"></header>
-  <main class="main">
-    <section class="page blog"></section>
-  </main>
-  <footer class="footer">
+
+<!-- ===== HEADER ===== -->
+<header class="header-hero font-heading">
+  <div class="header__content container">
+    <button class="menu__button white__button">
+      <span class="menu__button-text">меню</span>
+      <span class="hamburger-icon hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+    <div class="nav-overlay"></div>
+    <nav class="nav-menu">
+      <div class="nav-menu__inner">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item hidden">
+            <a href="../index.html" class="nav-menu__link">Главная</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="about.html" class="nav-menu__link">Обо мне</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="services.html" class="nav-menu__link">Услуги</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="reviews.html" class="nav-menu__link">Отзывы</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="gallery.html" class="nav-menu__link">Галерея</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="blog.html" class="nav-menu__link">Статьи</a>
+          </li>
+          <li class="nav-menu__item nav-menu__close hidden white__button">
+            <span class="nav-menu__close-text">закрыть</span>
+            <span class="nav-menu__close-icon"></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__social">
+      <img src="../assets/icons/vk.svg" alt="" class="vk">
+      <img src="../assets/icons/tg.svg" alt="" class="vk">
+      <img src="../assets/icons/insta.svg" alt="" class="vk">
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="blog-hero">
+  <img src="../assets/images/gallery/gallery_5.jpg" alt="Блог о хатха-йоге" class="blog-hero__bg">
+  <div class="blog-hero__content">
+    <h1 class="blog-hero__title">Статьи</h1>
+    <p class="blog-hero__subtitle">Авторские заметки о практике</p>
+  </div>
+</section>
+
+<main class="main">
+
+<!-- ===== ARTICLES ===== -->
+<section class="blog-articles">
+  <div class="container">
+    <div class="blog-articles__header">
+      <span class="blog-articles__label">Авторский проект</span>
+      <h2 class="blog-articles__title">Заметки йога</h2>
+      <p class="blog-articles__desc">Размышления о практике, дыхании, философии и всём, что делает йогу образом жизни</p>
+    </div>
+
+    <!-- Article 01 -->
+    <a href="../blog/single.html" class="blog-card">
+      <div class="blog-card__image-wrap">
+        <img src="../assets/images/gallery/gallery_1.jpg" alt="Техники дыхания в асанах" class="blog-card__image">
+        <span class="blog-card__tag">Практика</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__number">01</span>
+        <h3 class="blog-card__title">Как дышать в асанах: простые техники</h3>
+        <p class="blog-card__excerpt">Правильное дыхание — основа любой практики. Разбираем, как синхронизировать вдох и выдох с движением, чтобы асаны раскрывались глубже, а ум оставался спокойным. Техники уджайи и полного йоговского дыхания.</p>
+        <div class="blog-card__footer">
+          <span class="blog-card__meta">5 минут чтения</span>
+          <span class="blog-card__btn">
+            Читать
+            <span class="blog-card__btn-arrow">&rarr;</span>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 02 -->
+    <a href="../blog/single.html" class="blog-card">
+      <div class="blog-card__image-wrap">
+        <img src="../assets/images/gallery/gallery_2.jpg" alt="Утренние ритуалы" class="blog-card__image">
+        <span class="blog-card__tag">Осознанность</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__number">02</span>
+        <h3 class="blog-card__title">Утро без спешки: ритуалы йога</h3>
+        <p class="blog-card__excerpt">Как начать день, чтобы он сложился? Утренние практики, которые задают правильный ритм: от пробуждения до первой асаны. Рассказываю, из чего состоит моё утро и как внедрить эти привычки в свою жизнь.</p>
+        <div class="blog-card__footer">
+          <span class="blog-card__meta">7 минут чтения</span>
+          <span class="blog-card__btn">
+            Читать
+            <span class="blog-card__btn-arrow">&rarr;</span>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 03 -->
+    <a href="../blog/single.html" class="blog-card">
+      <div class="blog-card__image-wrap">
+        <img src="../assets/images/gallery/gallery_3.jpg" alt="Философия йоги" class="blog-card__image">
+        <span class="blog-card__tag">Философия</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__number">03</span>
+        <h3 class="blog-card__title">Почему тело — не главное в йоге</h3>
+        <p class="blog-card__excerpt">Йога — это не про гибкость и не про красивые асаны. Это про внимательность, принятие и внутреннюю тишину. Делюсь своим взглядом на то, что действительно важно в практике, и почему «получится» не равно «правильно».</p>
+        <div class="blog-card__footer">
+          <span class="blog-card__meta">10 минут чтения</span>
+          <span class="blog-card__btn">
+            Читать
+            <span class="blog-card__btn-arrow">&rarr;</span>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 04 -->
+    <a href="../blog/single.html" class="blog-card">
+      <div class="blog-card__image-wrap">
+        <img src="../assets/images/gallery/gallery_4.jpg" alt="Аюрведа на каждый день" class="blog-card__image">
+        <span class="blog-card__tag">Питание</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__number">04</span>
+        <h3 class="blog-card__title">Аюрведа на каждый день: с чего начать</h3>
+        <p class="blog-card__excerpt">Аюрведа — не сложная система, а простые принципы, которые можно встроить в обычный день. Как определить свою конституцию, какие продукты подходят разным типам и почему важно есть осознанно. Первые шаги без фанатизма.</p>
+        <div class="blog-card__footer">
+          <span class="blog-card__meta">6 минут чтения</span>
+          <span class="blog-card__btn">
+            Читать
+            <span class="blog-card__btn-arrow">&rarr;</span>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 05 -->
+    <a href="../blog/single.html" class="blog-card">
+      <div class="blog-card__image-wrap">
+        <img src="../assets/images/gallery/gallery_5.jpg" alt="Медитация для начинающих" class="blog-card__image">
+        <span class="blog-card__tag">Медитация</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__number">05</span>
+        <h3 class="blog-card__title">Тишина внутри: как начать медитировать</h3>
+        <p class="blog-card__excerpt">Медитация — это не про «не думать». Это про умение замечать свои мысли и возвращаться в настоящий момент. Простые техники для начинающих, которые помогут найти тишину даже в самом шумном дне. 5 минут — уже результат.</p>
+        <div class="blog-card__footer">
+          <span class="blog-card__meta">4 минуты чтения</span>
+          <span class="blog-card__btn">
+            Читать
+            <span class="blog-card__btn-arrow">&rarr;</span>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 06 -->
+    <a href="../blog/single.html" class="blog-card">
+      <div class="blog-card__image-wrap">
+        <img src="../assets/images/gallery/gallery_6.jpg" alt="История практики йоги" class="blog-card__image">
+        <span class="blog-card__tag">Вдохновение</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__number">06</span>
+        <h3 class="blog-card__title">История одной практики: мой путь</h3>
+        <p class="blog-card__excerpt">Йога вошла в мою жизнь не сразу. От первого неловкого занятия до решения стать преподавателем — честный рассказ о поиске себя, сомнениях, открытиях и том, что помогает не сходить с коврика даже в сложные периоды.</p>
+        <div class="blog-card__footer">
+          <span class="blog-card__meta">8 минут чтения</span>
+          <span class="blog-card__btn">
+            Читать
+            <span class="blog-card__btn-arrow">&rarr;</span>
+          </span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ===== CTA + FAQ ===== -->
+<section class="section-form-faq">
+  <div class="form-faq__grid">
+
+    <!-- FAQ -->
+    <div class="faq-block">
+      <h2 class="faq__title font-heading">Часто задаваемые вопросы</h2>
+      <p class="faq__subtitle">Всё, что важно знать перед началом</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Как часто выходят новые статьи?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Я стараюсь публиковать новые заметки раз в 1–2 недели. Подписывайтесь на соцсети, чтобы не пропустить — там я анонсирую каждый новый материал.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Можно ли предложить тему для статьи?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Конечно! Мне важно, чтобы блог был полезным. Напишите мне в директ или через форму обратной связи — я учту ваши пожелания.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Вы отвечаете на комментарии?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, я читаю и отвечаю на все вопросы. Если после статьи осталось что-то непонятным — пишите, я обязательно помогу разобраться.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Можно ли начать практиковать йогу с нуля?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, и для этого не нужно ждать «подходящего момента». Записывайтесь на пробное занятие — я покажу, что йога доступна каждому, независимо от возраста и физической подготовки.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-block">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами и отвечу на все вопросы</p>
+      <form action="">
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Хочу на пробное</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
   <div class="footer__inner container">
     <div class="footer__grid">
       <div class="footer__brand">
@@ -25,7 +289,7 @@
         <a href="../index.html" class="footer__nav-link">Главная</a>
         <a href="about.html" class="footer__nav-link">Обо мне</a>
         <a href="services.html" class="footer__nav-link">Услуги</a>
-        <a href="prices.html" class="footer__nav-link">Цены</a>
+        <a href="reviews.html" class="footer__nav-link">Отзывы</a>
         <a href="gallery.html" class="footer__nav-link">Галерея</a>
         <a href="blog.html" class="footer__nav-link">Статьи</a>
       </nav>
@@ -47,6 +311,10 @@
     </div>
   </div>
 </footer>
-  <script src="../js/main.js"></script>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="../js/main.js"></script>
+<script src="../js/faq.js"></script>
+<script src="../js/blog-page.js"></script>
 </body>
 </html>

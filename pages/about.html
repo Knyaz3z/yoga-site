@@ -3,17 +3,304 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Обо мне — Студия Йоги</title>
+  <title>Обо мне — Padma Aksaya</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/form-faq-block.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/about-page.css">
 </head>
 <body>
-  <header class="header"></header>
-  <main class="main">
-    <section class="page about"></section>
-  </main>
-  <footer class="footer">
+
+<!-- ===== HEADER ===== -->
+<header class="header-hero font-heading">
+  <div class="header__content container">
+    <button class="menu__button white__button">
+      <span class="menu__button-text">меню</span>
+      <span class="hamburger-icon hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+    <div class="nav-overlay"></div>
+    <nav class="nav-menu">
+      <div class="nav-menu__inner">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item hidden">
+            <a href="../index.html" class="nav-menu__link">Главная</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="about.html" class="nav-menu__link">Обо мне</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="services.html" class="nav-menu__link">Услуги</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="reviews.html" class="nav-menu__link">Отзывы</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="gallery.html" class="nav-menu__link">Галерея</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="blog.html" class="nav-menu__link">Статьи</a>
+          </li>
+          <li class="nav-menu__item nav-menu__close hidden white__button">
+            <span class="nav-menu__close-text">закрыть</span>
+            <span class="nav-menu__close-icon"></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__social">
+      <img src="../assets/icons/vk.svg" alt="" class="vk">
+      <img src="../assets/icons/tg.svg" alt="" class="vk">
+      <img src="../assets/icons/insta.svg" alt="" class="vk">
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="about-hero">
+  <img src="../assets/images/breathe_photo.jpg" alt="" class="about-hero__bg">
+  <div class="about-hero__content">
+    <h1 class="about-hero__title">Обо мне</h1>
+    <p class="about-hero__subtitle">Мой путь в йогу</p>
+  </div>
+</section>
+
+<main class="main">
+
+<!-- ===== STORY ===== -->
+<section class="about-story">
+  <div class="container">
+    <div class="about-story__header">
+      <span class="about-story__label">Приветствие</span>
+      <h2 class="about-story__title">Меня зовут Екатерина</h2>
+    </div>
+
+    <!-- Block 1: Introduction -->
+    <div class="story-block">
+      <div class="story-block__image-wrap">
+        <img src="../assets/images/katya__photo.jpg" alt="Екатерина" class="story-block__image">
+        <div class="story-block__image-deco"></div>
+      </div>
+      <div class="story-block__text">
+        <p>С детства я занимаюсь своим телом благодаря родителям — движение всегда было частью моей жизни.</p>
+        <p>Я выросла в спорте, но именно через травмы и ограничения научилась слышать своё тело по-настоящему. Каждый опыт, даже самый сложный, становился шагом к более глубокому пониманию себя.</p>
+        <p>Сегодня я знаю: тело — не инструмент для достижений, а проводник к внутренней свободе.</p>
+      </div>
+    </div>
+
+    <!-- Block 2: Journey -->
+    <div class="story-block story-block--reverse">
+      <div class="story-block__image-wrap">
+        <img src="../assets/images/hatha_img_1.jpg" alt="Практика" class="story-block__image">
+        <div class="story-block__image-deco"></div>
+      </div>
+      <div class="story-block__text">
+        <p>За плечами — спортивная гимнастика и множество травм суставов.</p>
+        <p>Это привело меня в пилатес, где я начала изучать осознанные оздоравливающие движения. Понимание физиологии стало глубже, но внутри постоянно жило ощущение, что чего-то не хватает.</p>
+        <p>Я искала целостность — не просто здоровое тело, но и спокойный ум, внутреннюю опору.</p>
+        <span class="story-block__quote">Движение без осознанности — просто механическая работа</span>
+      </div>
+    </div>
+
+    <!-- Block 3: Philosophy -->
+    <div class="story-block">
+      <div class="story-block__image-wrap">
+        <img src="../assets/images/hatha_img_3.jpg" alt="Гармония" class="story-block__image">
+        <div class="story-block__image-deco"></div>
+      </div>
+      <div class="story-block__text">
+        <p>Мой опыт занятий йогой также не вдохновил с первого раза.</p>
+        <p>Я решила изучать эти темы самостоятельно. Через погружение в религию и философию моё мышление начало меняться. Я поняла, что йога — это бесконечный мир роста, самопознания и любви к себе и ко всему миру.</p>
+        <p>Через дыхание, движение и осознанность я нашла практику, которая помогает не только укреплять тело, но и находить внутреннюю опору. Сегодня я создаю пространство, где можно заниматься без давления, сравнения и спешки.</p>
+        <span class="story-block__quote">Йога начинается там, где заканчивается гонка</span>
+      </div>
+    </div>
+
+    <!-- Affirmation pills -->
+    <div class="about-pills">
+      <div class="about-pill">Ежедневная личная практика</div>
+      <div class="about-pill">Хатха-йога и гармония</div>
+      <div class="about-pill">Бережный подход к новичкам</div>
+      <div class="about-pill">Практика без гонки и сравнения</div>
+    </div>
+
+    <!-- Invitation -->
+    <div class="about-invitation">
+      <span class="about-invitation__brand">Padma Aksaya</span>
+      <p class="about-invitation__text">
+        Я приглашаю вас познавать этот мир вместе. Это не про спорт и не про гонку. Мои практики направлены на постепенное улучшение всех сфер жизни, на духовное просветление и внутренний покой.
+      </p>
+      <span class="about-invitation__tagline">Пространство любви и познания без границ</span>
+      <button class="btn-primary">Прийти на первое занятие</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="about-services">
+  <div class="container">
+    <div class="about-services__header">
+      <span class="about-services__label">Форматы</span>
+      <h2 class="about-services__title">Как мы можем заниматься</h2>
+      <p class="about-services__subtitle">Выберите формат, который подходит именно вам</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Service 1: Individual -->
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="10" r="5" stroke="#C1A21B" stroke-width="1.5"/>
+            <path d="M6 28c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#C1A21B" stroke-width="1.5"/>
+          </svg>
+          <span class="service-card__number">01</span>
+        </div>
+        <h3 class="service-card__title">Индивидуальные занятия</h3>
+        <p class="service-card__desc">Персональный подход к вашей практике. Программа строится под ваш уровень, цели и особенности тела.</p>
+        <ul class="service-card__features">
+          <li>Полное внимание преподавателя</li>
+          <li>Программа под ваш запрос и тело</li>
+          <li>Гибкий график занятий</li>
+          <li>Подходит для восстановления после травм</li>
+        </ul>
+        <button class="btn-primary">Записаться</button>
+      </div>
+
+      <!-- Service 2: Group -->
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="10" cy="9" r="4" stroke="#C1A21B" stroke-width="1.5"/>
+            <circle cx="22" cy="9" r="4" stroke="#C1A21B" stroke-width="1.5"/>
+            <path d="M4 26c0-4.418 3.582-8 8-8h8c4.418 0 8 3.582 8 8" stroke="#C1A21B" stroke-width="1.5"/>
+          </svg>
+          <span class="service-card__number">02</span>
+        </div>
+        <h3 class="service-card__title">Групповые занятия</h3>
+        <p class="service-card__desc">Энергия общего пространства и поддержка группы. Занятия в мини-группах до 6 человек.</p>
+        <ul class="service-card__features">
+          <li>Атмосфера единомышленников</li>
+          <li>Регулярное расписание</li>
+          <li>Доступная стоимость</li>
+          <li>Внимание к каждому участнику</li>
+        </ul>
+        <button class="btn-primary">Записаться</button>
+      </div>
+
+      <!-- Service 3: Online -->
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 32 32" fill="none">
+            <rect x="3" y="7" width="26" height="18" rx="3" stroke="#C1A21B" stroke-width="1.5"/>
+            <circle cx="16" cy="16" r="4" stroke="#C1A21B" stroke-width="1.5"/>
+            <circle cx="16" cy="16" r="1.5" fill="#C1A21B"/>
+          </svg>
+          <span class="service-card__number">03</span>
+        </div>
+        <h3 class="service-card__title">Онлайн занятия</h3>
+        <p class="service-card__desc">Практика где угодно и когда удобно. Индивидуальные сессии через видеосвязь с полной поддержкой.</p>
+        <ul class="service-card__features">
+          <li>Занимайтесь из дома или путешествий</li>
+          <li>Индивидуальный подход онлайн</li>
+          <li>Запись занятий для повторения</li>
+          <li>Поддержка в мессенджере</li>
+        </ul>
+        <button class="btn-primary">Записаться</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA + FAQ ===== -->
+<section class="section-form-faq">
+  <div class="form-faq__grid">
+
+    <!-- FAQ -->
+    <div class="faq-block">
+      <h2 class="faq__title font-heading">Часто задаваемые вопросы</h2>
+      <p class="faq__subtitle">Всё, что важно знать перед началом</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Как проходят занятия?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Каждое занятие начинается с настройки дыхания, затем мягкая подготовка тела, основной блок асан и завершающее расслабление. Я подбираю практику под ваше самочувствие и уровень.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Нужна ли специальная подготовка?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Нет, хатха-йога подходит для любого уровня. Первое занятие — знакомство, где мы определяем ваш уровень. Главное — желание уделить время себе.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Что взять с собой?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Удобную одежду, коврик (если есть) и воду. Если коврика нет — я предоставлю. Для онлайн-занятий достаточно небольшого пространства и хорошего интернета.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Как часто нужно заниматься?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Для устойчивого эффекта достаточно 2–3 раз в неделю. Регулярность важнее интенсивности — именно она даёт заметные изменения в теле и состоянии.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Как записаться на пробное?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Заполните форму справа — я свяжусь с вами в ближайшее время. Первое занятие — бесплатно и без обязательств. Просто познакомимся и попрактикуем.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-block">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами в ближайшее время</p>
+      <form action="">
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Хочу на пробное</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
   <div class="footer__inner container">
     <div class="footer__grid">
       <div class="footer__brand">
@@ -25,7 +312,7 @@
         <a href="../index.html" class="footer__nav-link">Главная</a>
         <a href="about.html" class="footer__nav-link">Обо мне</a>
         <a href="services.html" class="footer__nav-link">Услуги</a>
-        <a href="prices.html" class="footer__nav-link">Цены</a>
+        <a href="reviews.html" class="footer__nav-link">Отзывы</a>
         <a href="gallery.html" class="footer__nav-link">Галерея</a>
         <a href="blog.html" class="footer__nav-link">Статьи</a>
       </nav>
@@ -47,6 +334,10 @@
     </div>
   </div>
 </footer>
-  <script src="../js/main.js"></script>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="../js/main.js"></script>
+<script src="../js/faq.js"></script>
+<script src="../js/about-page.js"></script>
 </body>
 </html>

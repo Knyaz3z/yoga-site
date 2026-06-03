@@ -12,7 +12,8 @@ const scripts = [
   '/js/auverda.js',
   '/js/padma-aksaya.js',
   '/js/asan-library.js',
-  '/js/products.js'
+  '/js/products.js',
+  '/js/scroll-top.js'
 ];
 
 scripts.forEach(src => {

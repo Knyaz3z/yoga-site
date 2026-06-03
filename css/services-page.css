@@ -1,0 +1,589 @@
+/* ========================================
+   Services Page — Стили
+   ======================================== */
+
+/* ----- Header fix (z-index above hero) ----- */
+.header-hero {
+  z-index: 100;
+}
+
+/* ----- Hero ----- */
+.services-hero {
+  position: relative;
+  height: 55vh;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2D3B2A;
+  color: #fff;
+  overflow: hidden;
+}
+
+.services-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(45,59,42,0.6) 0%, rgba(45,59,42,0.3) 100%);
+  z-index: 1;
+}
+
+.services-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.services-hero__title {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 80px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.services-hero__subtitle {
+  font-family: StyleScriptRegular, sans-serif;
+  font-size: 36px;
+  color: #C1A21B;
+  margin-bottom: 24px;
+}
+
+.services-hero__desc {
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ----- Hatha Intro ----- */
+.hatha-intro {
+  padding: 80px 0;
+  background: #FDFCF9;
+}
+
+.hatha-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hatha-intro__image-wrap {
+  position: relative;
+}
+
+.hatha-intro__image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.hatha-intro__image-deco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 16px;
+  left: 16px;
+  border: 2px solid #C1A21B;
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.hatha-intro__label {
+  font-size: 14px;
+  color: #CE5E5E;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hatha-intro__title {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 48px;
+  color: #2D3B2A;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.hatha-intro__text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #2D3B2A;
+  margin-bottom: 16px;
+}
+
+.hatha-intro__text:last-of-type {
+  margin-bottom: 24px;
+}
+
+/* ----- Services Detail ----- */
+.services-detail {
+  padding: 80px 0 100px;
+  background: #F7F5F0;
+}
+
+.services-detail__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-detail__label {
+  font-size: 14px;
+  color: #CE5E5E;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.services-detail__title {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 48px;
+  color: #2D3B2A;
+  line-height: 100%;
+  margin-bottom: 12px;
+}
+
+.services-detail__subtitle {
+  font-size: 18px;
+  color: #89A1AB;
+}
+
+.service-full {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px;
+  border: 1px solid #E6ECDC;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-full:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(45, 59, 42, 0.08);
+}
+
+.service-full--reverse .service-full__info {
+  order: 2;
+}
+
+.service-full--reverse .service-full__visual {
+  order: 1;
+}
+
+.service-full__number {
+  font-family: GoodVibesCyr, sans-serif;
+  font-size: 48px;
+  color: #C1A21B;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.service-full__title {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 36px;
+  color: #2D3B2A;
+  line-height: 100%;
+  margin-bottom: 12px;
+}
+
+.service-full__tagline {
+  font-size: 15px;
+  color: #CE5E5E;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.service-full__desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2D3B2A;
+  margin-bottom: 16px;
+}
+
+.service-full__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.service-full__features li {
+  font-size: 14px;
+  color: #5a6b57;
+  padding: 6px 0 6px 24px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.service-full__features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #C1A21B;
+  opacity: 0.4;
+}
+
+.service-full__price {
+  font-family: Jost Medium, sans-serif;
+  font-size: 22px;
+  color: #2D3B2A;
+  margin-bottom: 16px;
+}
+
+.service-full__price span {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 14px;
+  color: #89A1AB;
+}
+
+.service-full__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-full__visual-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ----- Benefits ----- */
+.benefits {
+  padding: 80px 0;
+  background: #FDFCF9;
+}
+
+.benefits__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.benefits__label {
+  font-size: 14px;
+  color: #CE5E5E;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.benefits__title {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 48px;
+  color: #2D3B2A;
+  line-height: 100%;
+  margin-bottom: 12px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.benefit-item {
+  text-align: center;
+  padding: 40px 24px;
+  border-radius: 20px;
+  border: 1px solid #E6ECDC;
+  background: #fff;
+  transition: transform 0.4s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-4px);
+}
+
+.benefit-item__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(193, 162, 27, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-item__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.benefit-item__title {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 22px;
+  color: #2D3B2A;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+.benefit-item__desc {
+  font-size: 15px;
+  color: #747D66;
+  line-height: 1.5;
+}
+
+/* ----- CTA Banner ----- */
+.services-cta {
+  background: #2D3B2A;
+  border-radius: 20px;
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 70% 30%, rgba(193, 162, 27, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.services-cta__title {
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 42px;
+  color: #fff;
+  line-height: 100%;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-cta__text {
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  max-width: 500px;
+  margin: 0 auto 28px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.services-cta .btn-primary {
+  background: #C1A21B;
+  color: #2D3B2A;
+  font-size: 18px;
+  padding: 14px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-cta .btn-primary:hover {
+  background: #d4b420;
+  transform: translateY(-2px);
+}
+
+/* ----- Animations ----- */
+.services-hero__content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.services-hero--visible .services-hero__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hatha-intro__grid,
+.service-full,
+.benefit-item {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.hatha-intro--visible .hatha-intro__grid,
+.service-full--visible,
+.benefit-item--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hatha-intro__grid {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.service-full {
+  transition: opacity 0.7s ease, transform 0.7s ease, box-shadow 0.4s ease;
+}
+
+.service-full:nth-child(2) { transition-delay: 0.15s; }
+.service-full:nth-child(3) { transition-delay: 0.3s; }
+
+.benefit-item {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.benefit-item:nth-child(2) { transition-delay: 0.1s; }
+.benefit-item:nth-child(3) { transition-delay: 0.2s; }
+.benefit-item:nth-child(4) { transition-delay: 0.3s; }
+.benefit-item:nth-child(5) { transition-delay: 0.4s; }
+.benefit-item:nth-child(6) { transition-delay: 0.5s; }
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 1240px) {
+  .services-hero__title { font-size: 64px; }
+  .services-hero__subtitle { font-size: 30px; }
+
+  .hatha-intro__title { font-size: 40px; }
+  .hatha-intro__grid { gap: 40px; }
+  .hatha-intro__image { height: 400px; }
+
+  .services-detail__title { font-size: 40px; }
+
+  .service-full { gap: 40px; padding: 36px; }
+  .service-full__title { font-size: 30px; }
+  .service-full__visual-image { height: 300px; }
+
+  .benefits__title { font-size: 40px; }
+  .benefits-grid { gap: 20px; }
+  .benefit-item { padding: 32px 20px; }
+
+  .services-cta__title { font-size: 36px; }
+}
+
+@media (max-width: 900px) {
+  .services-hero { min-height: 340px; height: 45vh; }
+  .services-hero__title { font-size: 48px; }
+  .services-hero__subtitle { font-size: 24px; }
+  .services-hero__desc { font-size: 16px; }
+
+  .hatha-intro { padding: 60px 0; }
+  .hatha-intro__title { font-size: 34px; }
+  .hatha-intro__grid { gap: 30px; }
+  .hatha-intro__image { height: 340px; }
+  .hatha-intro__text { font-size: 15px; }
+
+  .services-detail { padding: 60px 0; }
+  .services-detail__title { font-size: 34px; }
+
+  .service-full {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px;
+  }
+
+  .service-full--reverse .service-full__info { order: 1; }
+  .service-full--reverse .service-full__visual { order: 2; }
+
+  .service-full__title { font-size: 28px; }
+  .service-full__visual-image { height: 260px; }
+  .service-full__features { grid-template-columns: 1fr; }
+
+  .benefits { padding: 60px 0; }
+  .benefits__title { font-size: 34px; }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .services-cta { padding: 48px 32px; margin-bottom: 60px; }
+  .services-cta__title { font-size: 30px; }
+}
+
+@media (max-width: 768px) {
+  .services-hero { min-height: 300px; height: 40vh; }
+  .services-hero__title { font-size: 36px; }
+  .services-hero__subtitle { font-size: 20px; }
+
+  .hatha-intro { padding: 40px 0; }
+  .hatha-intro__grid { grid-template-columns: 1fr; gap: 24px; }
+  .hatha-intro__image { height: 280px; }
+  .hatha-intro__image-deco { display: none; }
+  .hatha-intro__title { font-size: 28px; }
+  .hatha-intro__text { font-size: 15px; }
+
+  .services-detail { padding: 40px 0 60px; }
+  .services-detail__title { font-size: 28px; }
+  .services-detail__subtitle { font-size: 15px; }
+
+  .service-full { padding: 24px; }
+  .service-full__title { font-size: 24px; }
+  .service-full__tagline { font-size: 14px; }
+  .service-full__desc { font-size: 15px; }
+  .service-full__features li { font-size: 13px; }
+  .service-full__visual-image { height: 220px; }
+  .service-full__price { font-size: 20px; }
+
+  .benefits { padding: 40px 0; }
+  .benefits__title { font-size: 28px; }
+  .benefits-grid { grid-template-columns: 1fr; gap: 16px; }
+  .benefit-item { padding: 28px 20px; }
+  .benefit-item__title { font-size: 20px; }
+
+  .services-cta { padding: 36px 24px; margin-bottom: 40px; }
+  .services-cta__title { font-size: 26px; }
+  .services-cta__text { font-size: 15px; }
+  .services-cta .btn-primary { font-size: 16px; padding: 12px 32px; }
+}
+
+@media (max-width: 460px) {
+  .services-hero__title { font-size: 28px; }
+  .services-hero__subtitle { font-size: 18px; }
+  .services-hero__desc { font-size: 14px; }
+
+  .hatha-intro__label { font-size: 12px; }
+  .hatha-intro__title { font-size: 24px; }
+  .hatha-intro__image { height: 220px; border-radius: 16px; }
+
+  .services-detail__label { font-size: 12px; }
+  .services-detail__title { font-size: 24px; }
+
+  .service-full { padding: 20px; border-radius: 16px; }
+  .service-full__number { font-size: 36px; }
+  .service-full__title { font-size: 22px; }
+  .service-full__desc { font-size: 14px; }
+  .service-full__visual-image { height: 180px; }
+
+  .benefits__label { font-size: 12px; }
+  .benefits__title { font-size: 24px; }
+
+  .services-cta { padding: 28px 16px; border-radius: 16px; }
+  .services-cta__title { font-size: 22px; }
+  .services-cta__text { font-size: 14px; }
+}
+
+@media (max-width: 360px) {
+  .services-hero__title { font-size: 24px; }
+  .services-hero__subtitle { font-size: 16px; }
+
+  .hatha-intro__image { height: 180px; }
+  .hatha-intro__title { font-size: 22px; }
+
+  .service-full__visual-image { height: 160px; }
+}

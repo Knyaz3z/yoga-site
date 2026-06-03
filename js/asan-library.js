@@ -5,6 +5,9 @@
 (function () {
   'use strict';
 
+  const container = document.querySelector('.asan-library');
+  if (!container) return;
+
   const asanas = [
     {
       nameRu: 'Поза горы',
@@ -126,6 +129,8 @@
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === asanas.length - 1;
   }
+
+  if (!prevBtn || !nextBtn) return;
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {

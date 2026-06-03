@@ -3,17 +3,255 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Галерея — Студия Йоги</title>
+  <meta name="description" content="Фотогалерея студии хатха-йоги Padma Aksaya. Пространство студии, занятия с учениками, ретриты и практики в Минске.">
+  <title>Галерея — Padma Aksaya | Фото студии хатха-йоги, занятий и ретритов</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gallery-block.css">
+  <link rel="stylesheet" href="../css/form-faq-block.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/gallery-page.css">
 </head>
 <body>
-  <header class="header"></header>
-  <main class="main">
-    <section class="page gallery"></section>
-  </main>
-  <footer class="footer">
+
+<!-- ===== HEADER ===== -->
+<header class="header-hero font-heading">
+  <div class="header__content container">
+    <button class="menu__button white__button">
+      <span class="menu__button-text">меню</span>
+      <span class="hamburger-icon hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+    <div class="nav-overlay"></div>
+    <nav class="nav-menu">
+      <div class="nav-menu__inner">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item hidden">
+            <a href="../index.html" class="nav-menu__link">Главная</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="about.html" class="nav-menu__link">Обо мне</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="services.html" class="nav-menu__link">Услуги</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="reviews.html" class="nav-menu__link">Отзывы</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="gallery.html" class="nav-menu__link">Галерея</a>
+          </li>
+          <li class="nav-menu__item hidden">
+            <a href="blog.html" class="nav-menu__link">Статьи</a>
+          </li>
+          <li class="nav-menu__item nav-menu__close hidden white__button">
+            <span class="nav-menu__close-text">закрыть</span>
+            <span class="nav-menu__close-icon"></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__social">
+      <img src="../assets/icons/vk.svg" alt="" class="vk">
+      <img src="../assets/icons/tg.svg" alt="" class="vk">
+      <img src="../assets/icons/insta.svg" alt="" class="vk">
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="gallery-hero">
+  <img src="../assets/images/breathe_photo.jpg" alt="Галерея студии хатха-йоги" class="gallery-hero__bg">
+  <div class="gallery-hero__content">
+    <h1 class="gallery-hero__title">Галерея</h1>
+    <p class="gallery-hero__subtitle">Мгновения нашей практики</p>
+  </div>
+</section>
+
+<main class="main">
+
+<!-- ===== STUDIO ===== -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-section__header">
+      <span class="gallery-section__label">Пространство</span>
+      <h2 class="gallery-section__title">Моя студия</h2>
+      <p class="gallery-section__desc">Уютное пространство в центре Минска, где каждая деталь создана для практики. Здесь нет лишнего — только тишина, свет и возможность побыть наедине с собой.</p>
+    </div>
+    <div class="gallery-grid gallery-grid--mixed">
+      <div class="gallery-grid__item gallery-grid__item--wide">
+        <img src="../assets/images/hatha_img_4.jpg" alt="Интерьер студии хатха-йоги" class="gallery__img featured">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/gallery/gallery_1.jpg" alt="Зал для занятий йогой" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/gallery/gallery_2.jpg" alt="Пространство студии" class="gallery__img landscape">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STUDENTS ===== -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-section__header">
+      <span class="gallery-section__label">Сообщество</span>
+      <h2 class="gallery-section__title">Ученики</h2>
+      <p class="gallery-section__desc">Каждый, кто приходит в студию, приносит свою историю. Вместе мы создаём пространство, где можно быть собой — без масок, без гонки, без сравнения.</p>
+    </div>
+    <div class="gallery-grid gallery-grid--3">
+      <div class="gallery-grid__item">
+        <img src="../assets/images/emotial-image-2.jpg" alt="Ученица на занятии хатха-йогой" class="gallery__img portrait">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/emotial-image-1.jpg" alt="Практика йоги в группе" class="gallery__img portrait">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/emotial-image-3.jpg" alt="Групповое занятие хатха-йогой" class="gallery__img portrait">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RETREATS ===== -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-section__header">
+      <span class="gallery-section__label">Путешествия</span>
+      <h2 class="gallery-section__title">Ретриты</h2>
+      <p class="gallery-section__desc">Йога-ретриты — это возможность выйти из привычного ритма, погрузиться в практику на природе и наполниться тишиной. Несколько дней глубокой практики, осознанности и единения с собой.</p>
+    </div>
+    <div class="gallery-grid gallery-grid--2">
+      <div class="gallery-grid__item">
+        <img src="../assets/images/hatha_img_2.jpg" alt="Йога-ретрит на природе" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/gallery/gallery_3.jpg" alt="Ретрит по хатха-йоге" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item gallery-grid__item--wide">
+        <img src="../assets/images/breathe_photo.jpg" alt="Практика на свежем воздухе" class="gallery__img featured">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRACTICES ===== -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-section__header">
+      <span class="gallery-section__label">Моменты</span>
+      <h2 class="gallery-section__title">Практики</h2>
+      <p class="gallery-section__desc">Асаны, дыхание, медитация — каждая практика уникальна. Мы не стремимся к идеальной форме, мы учимся чувствовать и быть в моменте.</p>
+    </div>
+    <div class="gallery-grid gallery-grid--3">
+      <div class="gallery-grid__item">
+        <img src="../assets/images/hatha_img_1.jpg" alt="Выполнение асаны в хатха-йоге" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/hatha_img_3.jpg" alt="Практика хатха-йоги" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/gallery/gallery_4.jpg" alt="Медитация в студии" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/gallery/gallery_5.jpg" alt="Занятие хатха-йогой" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/gallery/gallery_6.jpg" alt="Дыхательные практики" class="gallery__img landscape">
+      </div>
+      <div class="gallery-grid__item">
+        <img src="../assets/images/katya__photo.jpg" alt="Преподаватель хатха-йоги" class="gallery__img portrait">
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="gallery-cta">
+      <h3 class="gallery-cta__title">Хотите стать частью?</h3>
+      <p class="gallery-cta__text">Первое занятие — бесплатно. Приходите знакомиться, практиковать и наполняться.</p>
+      <button class="btn-primary">Записаться на пробное</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CTA + FAQ ===== -->
+<section class="section-form-faq">
+  <div class="form-faq__grid">
+
+    <!-- FAQ -->
+    <div class="faq-block">
+      <h2 class="faq__title font-heading">Часто задаваемые вопросы</h2>
+      <p class="faq__subtitle">Всё, что важно знать перед началом</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Где находится студия?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Студия находится в центре Минска, в пешей доступности от метро. Точный адрес я сообщу после записи. Пространство небольшое и уютное — специально создано для спокойной практики.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Можно ли посмотреть студию перед занятием?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Конечно! Вы можете прийти заранее, посмотреть пространство и задать все вопросы. Первое занятие — бесплатно, так что вы ничего не теряете.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Что нужно для первого занятия?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Удобная одежда, коврик (если есть) и вода. Если коврика нет — я предоставлю. Главное — желание уделить время себе.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Как записаться на пробное?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Заполните форму справа — я свяжусь с вами в ближайшее время и договорюсь о встрече. Пробное занятие проводится в удобное для вас время.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-block">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами и отвечу на все вопросы</p>
+      <form action="">
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Хочу на пробное</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
   <div class="footer__inner container">
     <div class="footer__grid">
       <div class="footer__brand">
@@ -25,7 +263,7 @@
         <a href="../index.html" class="footer__nav-link">Главная</a>
         <a href="about.html" class="footer__nav-link">Обо мне</a>
         <a href="services.html" class="footer__nav-link">Услуги</a>
-        <a href="prices.html" class="footer__nav-link">Цены</a>
+        <a href="reviews.html" class="footer__nav-link">Отзывы</a>
         <a href="gallery.html" class="footer__nav-link">Галерея</a>
         <a href="blog.html" class="footer__nav-link">Статьи</a>
       </nav>
@@ -47,6 +285,11 @@
     </div>
   </div>
 </footer>
-  <script src="../js/main.js"></script>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="../js/main.js"></script>
+<script src="../js/gallery.js"></script>
+<script src="../js/faq.js"></script>
+<script src="../js/gallery-page.js"></script>
 </body>
 </html>
