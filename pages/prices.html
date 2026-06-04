@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/form-faq-block.css">
+  <link rel="stylesheet" href="../css/modal.css">
   <link rel="stylesheet" href="../css/footer.css">
   <style>
     .prices-page { padding-top: 120px; }
@@ -113,7 +114,7 @@
           <li class="prices-card__feature-item">Гибкий график</li>
           <li class="prices-card__feature-item">Очно или онлайн</li>
         </ul>
-        <a href="../index.html#form-block" class="prices-card__btn">Записаться</a>
+        <a href="#" class="prices-card__btn" data-modal-trigger>Записаться</a>
       </div>
 
       <div class="prices-card prices-card--featured">
@@ -128,7 +129,7 @@
           <li class="prices-card__feature-item">Регулярные практики 2-3 раза в неделю</li>
           <li class="prices-card__feature-item">Подходит для начинающих</li>
         </ul>
-        <a href="../index.html#form-block" class="prices-card__btn">Записаться</a>
+        <a href="#" class="prices-card__btn" data-modal-trigger>Записаться</a>
       </div>
 
       <div class="prices-card">
@@ -143,7 +144,7 @@
           <li class="prices-card__feature-item">Не нужен коврик</li>
           <li class="prices-card__feature-item">Запись практики</li>
         </ul>
-        <a href="../index.html#form-block" class="prices-card__btn">Записаться</a>
+        <a href="#" class="prices-card__btn" data-modal-trigger>Записаться</a>
       </div>
     </section>
 
@@ -211,5 +212,29 @@
   </footer>
 
   <script src="../js/main.js"></script>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="form-modal">
+  <div class="modal">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <div class="form-block modal__form">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами в ближайшее время</p>
+      <form action="" novalidate>
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Отправить</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -25,6 +25,10 @@
   >
   <link
     rel="stylesheet"
+    href="../css/modal.css"
+  >
+  <link
+    rel="stylesheet"
     href="../css/footer.css"
   >
   <link
@@ -152,7 +156,7 @@
           <p class="hatha-intro__text">Хатха-йога — это классическое направление йоги, которое объединяет работу с телом через асаны (позы), пранаяму (дыхательные техники) и медитацию. Это не просто физическая практика, а целостная система гармонизации тела, ума и духа.</p>
           <p class="hatha-intro__text">В отличие от динамичных и силовых направлений, хатха-йога предполагает осознанное удержание поз, мягкое раскрытие тела и глубокое дыхание. Каждая асана выполняется в комфортном темпе с полным вниманием к ощущениям — без гонки, без сравнения, без насилия над собой.</p>
           <p class="hatha-intro__text">Регулярная практика хатха-йоги улучшает гибкость, укрепляет мышцы, выравнивает осанку, нормализует работу внутренних органов и нервной системы. Но главное — она учит слышать своё тело и находить внутреннюю опору.</p>
-          <button class="btn-primary">Записаться на пробное</button>
+          <button class="btn-primary" data-modal-trigger>Записаться на пробное</button>
         </div>
       </div>
     </div>
@@ -185,7 +189,7 @@
             <li>Работа с дыханием</li>
           </ul>
           <p class="service-full__price">от 6000 RUB <span>/ занятие</span></p>
-          <button class="btn-primary">Записаться на индивидуальное</button>
+          <button class="btn-primary" data-modal-trigger>Записаться на индивидуальное</button>
         </div>
         <div class="service-full__visual">
           <img
@@ -214,7 +218,7 @@
             <li>Доступная стоимость</li>
           </ul>
           <p class="service-full__price">от 4000 RUB <span>/ занятие</span></p>
-          <button class="btn-primary">Записаться в группу</button>
+          <button class="btn-primary" data-modal-trigger>Записаться в группу</button>
         </div>
         <div class="service-full__visual">
           <img
@@ -243,7 +247,7 @@
             <li>Практика из любой точки</li>
           </ul>
           <p class="service-full__price">от 2000 RUB <span>/ занятие</span></p>
-          <button class="btn-primary">Записаться на онлайн</button>
+          <button class="btn-primary" data-modal-trigger>Записаться на онлайн</button>
         </div>
         <div class="service-full__visual">
           <img
@@ -258,7 +262,7 @@
       <div class="services-cta">
         <h3 class="services-cta__title">Первое занятие — бесплатно</h3>
         <p class="services-cta__text">Познакомимся, определим ваш уровень и подберём подходящий формат практики. Без обязательств и без давления.</p>
-        <button class="btn-primary">Записаться на пробное</button>
+        <button class="btn-primary" data-modal-trigger>Записаться на пробное</button>
       </div>
 
     </div>
@@ -612,5 +616,29 @@
 <!-- ===== SCRIPTS ===== -->
 <script src="../js/main.js"></script>
 <script src="../js/services-page.js"></script>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="form-modal">
+  <div class="modal">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <div class="form-block modal__form">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами в ближайшее время</p>
+      <form action="" novalidate>
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Отправить</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>

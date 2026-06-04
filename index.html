@@ -85,7 +85,10 @@
     rel="stylesheet"
     href="css/style.css"
   >
-
+  <link
+    rel="stylesheet"
+    href="css/modal.css"
+  >
 
 </head>
 <body>
@@ -207,7 +210,7 @@
         <span>Первое занятие бесплатно</span>
       </div>
       <div class="hero__desc-but-block">
-        <button class="hero__desc-but white__button">Пробное занятие</button>
+        <button class="hero__desc-but white__button" data-modal-trigger>Пробное занятие</button>
         <div class="hero__video-but white__button">
           <svg
             class="play__icon"
@@ -351,7 +354,7 @@
           </div>
         </div>
 
-        <button class="cta__button-green btn-primary">
+        <button class="cta__button-green btn-primary" data-modal-trigger>
           Прийти на первое занятие
         </button>
       </div>
@@ -1412,7 +1415,7 @@
         Через регулярную практику меняется не только тело, но и восприятие жизни. Появляется больше спокойствия, ясности, силы и доверия к своему пути. Именно с этого начинается настоящая гармония.
       </div>
 
-      <button class="breathe__button btn-primary">связаться</button>
+      <button class="breathe__button btn-primary" data-modal-trigger>связаться</button>
 
 
     </div>
@@ -1984,6 +1987,30 @@
   src="/js/main.js"
   defer
 ></script>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="form-modal">
+  <div class="modal">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <div class="form-block modal__form">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами в ближайшее время</p>
+      <form action="" novalidate>
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Отправить</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

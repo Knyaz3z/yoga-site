@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/gallery-block.css">
   <link rel="stylesheet" href="../css/form-faq-block.css">
+  <link rel="stylesheet" href="../css/modal.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/gallery-page.css">
 </head>
@@ -172,7 +173,7 @@
     <div class="gallery-cta">
       <h3 class="gallery-cta__title">Хотите стать частью?</h3>
       <p class="gallery-cta__text">Первое занятие — бесплатно. Приходите знакомиться, практиковать и наполняться.</p>
-      <button class="btn-primary">Записаться на пробное</button>
+      <button class="btn-primary" data-modal-trigger>Записаться на пробное</button>
     </div>
 
   </div>
@@ -290,5 +291,29 @@
 <script src="../js/main.js"></script>
 <script src="../js/gallery.js"></script>
 <script src="../js/gallery-page.js"></script>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="form-modal">
+  <div class="modal">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <div class="form-block modal__form">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами в ближайшее время</p>
+      <form action="" novalidate>
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Отправить</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>

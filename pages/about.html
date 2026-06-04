@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/form-faq-block.css">
+  <link rel="stylesheet" href="../css/modal.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/about-page.css">
 </head>
@@ -136,7 +137,7 @@
         Я приглашаю вас познавать этот мир вместе. Это не про спорт и не про гонку. Мои практики направлены на постепенное улучшение всех сфер жизни, на духовное просветление и внутренний покой.
       </p>
       <span class="about-invitation__tagline">Пространство любви и познания без границ</span>
-      <button class="btn-primary">Прийти на первое занятие</button>
+      <button class="btn-primary" data-modal-trigger>Прийти на первое занятие</button>
     </div>
 
   </div>
@@ -170,7 +171,7 @@
           <li>Гибкий график занятий</li>
           <li>Подходит для восстановления после травм</li>
         </ul>
-        <button class="btn-primary">Записаться</button>
+        <button class="btn-primary" data-modal-trigger>Записаться</button>
       </div>
 
       <!-- Service 2: Group -->
@@ -191,7 +192,7 @@
           <li>Доступная стоимость</li>
           <li>Внимание к каждому участнику</li>
         </ul>
-        <button class="btn-primary">Записаться</button>
+        <button class="btn-primary" data-modal-trigger>Записаться</button>
       </div>
 
       <!-- Service 3: Online -->
@@ -212,7 +213,7 @@
           <li>Запись занятий для повторения</li>
           <li>Поддержка в мессенджере</li>
         </ul>
-        <button class="btn-primary">Записаться</button>
+        <button class="btn-primary" data-modal-trigger>Записаться</button>
       </div>
 
     </div>
@@ -339,5 +340,29 @@
 <!-- ===== SCRIPTS ===== -->
 <script src="../js/main.js"></script>
 <script src="../js/about-page.js"></script>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="form-modal">
+  <div class="modal">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <div class="form-block modal__form">
+      <h3 class="form__title font-heading">Записаться на занятие</h3>
+      <p class="form__subtitle">Оставьте контакты — я свяжусь с вами в ближайшее время</p>
+      <form action="" novalidate>
+        <div class="form-group">
+          <input class="form-input input-pill" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="tel" placeholder="Телефон" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input input-pill" type="email" placeholder="Email (необязательно)">
+        </div>
+        <button class="form-submit btn-primary" type="submit">Отправить</button>
+      </form>
+      <p class="form-note font-heading">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>

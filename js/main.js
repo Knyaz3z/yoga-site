@@ -14,7 +14,8 @@ const scripts = [
   '/js/asan-library.js',
   '/js/products.js',
   '/js/scroll-top.js',
-  '/js/forms-validation.js'
+  '/js/forms-validation.js',
+  '/js/modal.js'
 ];
 
 scripts.forEach(src => {

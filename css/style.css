@@ -619,8 +619,6 @@ body {
 .main__image {
   width: 1920px;
   max-width: 1920px;
-  justify-self: center;
-
 }
 
 .hero {
@@ -916,6 +914,19 @@ body {
   .first__point,
   .second__point {
     display: none;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .main__image {
+    flex-shrink: 0;
+    width: 1920px;
+    max-width: 1920px;
   }
 }
 
