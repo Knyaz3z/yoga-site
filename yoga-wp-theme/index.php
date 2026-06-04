@@ -27,7 +27,6 @@
                     <li class="nav-menu__item hidden"><a href="pages/about.html" class="nav-menu__link">Обо мне</a></li>
                     <li class="nav-menu__item hidden"><a href="pages/services.html" class="nav-menu__link">Услуги</a>
                     </li>
-                    <li class="nav-menu__item hidden"><a href="pages/prices.html" class="nav-menu__link">Цены</a></li>
                     <li class="nav-menu__item hidden"><a href="pages/gallery.html" class="nav-menu__link">Галерея</a>
                     </li>
                     <li class="nav-menu__item hidden"><a href="pages/blog.html" class="nav-menu__link">Статьи</a></li>

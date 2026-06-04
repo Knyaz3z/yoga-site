@@ -1,4 +1,21 @@
 /* ===== SECTION BLOCK ===== */
+.padma__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: #2D3B2A;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.3;
+  z-index: 1;
+  letter-spacing: 0.02em;
+}
+
 .padma-section {
   min-height: 100vh;
   background-color: #FDFCF9;

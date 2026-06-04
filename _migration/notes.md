@@ -7,7 +7,6 @@
 | `index.html`               | `front-page.php`          |
 | `pages/about.html`         | `page-about.php`          |
 | `pages/services.html`      | `page-services.php`       |
-| `pages/prices.html`        | `page-prices.php`         |
 | `pages/gallery.html`       | `page-gallery.php`        |
 | `pages/blog.html`          | `page-blog.php`           |
 | `blog/index.html`          | `archive.php`             |
