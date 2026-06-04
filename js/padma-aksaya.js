@@ -158,29 +158,29 @@
     const dividers = [...section.querySelectorAll('.padma-divider')];
 
     svgFade(waterRing, 0.35, 800, 0);
-    svgFade(waterRing2, 0.2, 900, 100);
-    svgFade(waterRing3, 0.12, 1000, 200);
+    svgFade(waterRing2, 0.2, 900, 50);
+    svgFade(waterRing3, 0.12, 1000, 100);
 
-    svgFade(stem, 0.7, 700, 300);
-    svgFade(leafL, 0.6, 700, 450);
-    svgFade(leafR, 0.6, 700, 500);
+    svgFade(stem, 0.7, 700, 150);
+    svgFade(leafL, 0.6, 700, 200);
+    svgFade(leafR, 0.6, 700, 250);
 
-    svgFade(glow, 1, 1200, 500, easeInOutCubic);
+    svgFade(glow, 1, 1200, 250, easeInOutCubic);
 
-    petalsL3.forEach((p, i) => bloomPetal(p, 900, 600 + i * 120));
-    petalsL2.forEach((p, i) => bloomPetal(p, 950, 1000 + i * 100));
-    petalsL1.forEach((p, i) => bloomPetal(p, 1000, 1380 + i * 90));
+    petalsL3.forEach((p, i) => bloomPetal(p, 900, 300 + i * 60));
+    petalsL2.forEach((p, i) => bloomPetal(p, 950, 500 + i * 50));
+    petalsL1.forEach((p, i) => bloomPetal(p, 1000, 700 + i * 50));
 
-    svgFade(center, 1, 700, 1900, easeOutCubic);
-    svgFade(centerInner, 1, 500, 2200, easeOutCubic);
-    svgFade(stamens, 1, 600, 2400, easeOutCubic);
+    svgFade(center, 1, 700, 1000, easeOutCubic);
+    svgFade(centerInner, 1, 500, 1100, easeOutCubic);
+    svgFade(stamens, 1, 600, 1200, easeOutCubic);
 
     setTimeout(() => {
       lotusWrap.classList.add('lotus-animated');
-    }, 2600);
+    }, 1300);
 
     panels.forEach(panel => {
-      const delay = parseInt(panel.dataset.delay || '1000', 10);
+      const delay = parseInt(panel.dataset.delay || '500', 10);
       const isLeft = panel.classList.contains('padma-panel--left');
       fadeIn({
         el: panel,
@@ -192,19 +192,19 @@
       });
     });
 
-    dividers.forEach((d, i) => expandDivider(d, 1600 + i * 200));
+    dividers.forEach((d, i) => expandDivider(d, 800 + i * 100));
 
     fadeIn({
       el: studioName,
       duration: 1200,
-      delay: 2200,
+      delay: 1100,
       fromY: 20,
       toY: 0,
       easeFn: easeInOutCubic,
     });
 
     const mainDivider = studioName.querySelector('.padma-divider');
-    if (mainDivider) expandDivider(mainDivider, 2800);
+    if (mainDivider) expandDivider(mainDivider, 1400);
   }
 
   const observer = new IntersectionObserver(

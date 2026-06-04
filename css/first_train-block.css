@@ -1,5 +1,5 @@
 .first{
-  margin-top: 50px;
+  margin-top: 140px;
 }
 .first__block{
   display: flex;
@@ -87,6 +87,10 @@
    ======================================== */
 
 @media (max-width: 1240px) {
+  .first {
+    margin-top: 120px;
+  }
+
   .first__text-block {
     width: 480px;
     padding: 12px 0 24px 12px;
@@ -129,6 +133,10 @@
    ======================================== */
 
 @media (max-width: 900px) {
+  .first {
+    margin-top: 100px;
+  }
+
   .first__text-block {
     width: 400px;
     padding: 10px 0 20px 10px;
@@ -164,6 +172,10 @@
    ======================================== */
 
 @media (max-width: 768px) {
+  .first {
+    margin-top: 80px;
+  }
+
   .first__block {
     gap: 24px;
   }
@@ -212,6 +224,10 @@
    ======================================== */
 
 @media (max-width: 460px) {
+  .first {
+    margin-top: 60px;
+  }
+
   .first__text-block {
     padding: 10px;
   }

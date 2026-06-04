@@ -1,6 +1,6 @@
 .emotial {
   position: relative;
-  margin: 300px 0 0 0;
+  margin: 140px 0 0 0;
 }
 
 .added-text-1 {
@@ -133,7 +133,7 @@
 @media (max-width: 767px) {
   .emotial {
     position: relative;
-    margin: 50px 0 0 0;
+    margin: 60px 0 0 0;
   }
   .emotial__photo-block {
     flex-direction: column;

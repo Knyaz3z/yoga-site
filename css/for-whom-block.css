@@ -1,5 +1,5 @@
 .for__whom {
-  margin-top: 50px;
+  margin-top: 140px;
 }
 
 .for__whom-wrapper {
@@ -54,6 +54,10 @@
    ======================================== */
 
 @media (max-width: 1240px) {
+  .for__whom {
+    margin-top: 120px;
+  }
+
   .for__whom-head {
     font-size: 34px;
   }
@@ -90,6 +94,10 @@
    ======================================== */
 
 @media (max-width: 900px) {
+  .for__whom {
+    margin-top: 100px;
+  }
+
   .for__whom-head {
     font-size: 28px;
   }
@@ -128,6 +136,10 @@
    ======================================== */
 
 @media (max-width: 768px) {
+  .for__whom {
+    margin-top: 80px;
+  }
+
   .for__whom-head {
     font-size: 24px;
     padding-bottom: 16px;
@@ -165,6 +177,10 @@
    ======================================== */
 
 @media (max-width: 460px) {
+  .for__whom {
+    margin-top: 60px;
+  }
+
   .for__whom-head {
     font-size: 20px;
   }
