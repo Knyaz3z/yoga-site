@@ -1,12 +1,14 @@
 .gallery {
   columns: 7 160px; /* кол-во колонок и минимальная ширина */
   column-gap: 8px;
-  max-height: 1050px;
+  max-height: 950px;
   overflow: hidden;
   padding: 0 5px;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom:  0px;
 }
+
+
 
 .gallery img {
   width: 100%;

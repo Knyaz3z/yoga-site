@@ -15,7 +15,7 @@
       time: '1-2 мин',
       level: 'для начинающих',
       effect: 'Влияние: Улучшает осанку, укрепляет мышцы бедер и повышает осознание всего тела.',
-      photo: 'assets/images/hatha_img_1.jpg',
+      photo: 'assets/images/asan-library-block/hatha_img_1_asan-library-block.jpg',
       steps: [
         'Встаньте прямо, поставив стопы вместе или на ширине таза.',
         'Равномерно распределите вес тела на обе стопы.',
@@ -31,7 +31,7 @@
       time: '1-2 мин',
       level: 'для начинающих',
       effect: 'Влияние: Укрепляет ноги и спину, улучшает равновесие и концентрацию.',
-      photo: 'assets/images/hatha_img_2.jpg',
+      photo: 'assets/images/asan-library-block/hatha_img_2_asan-library-block.jpg',
       steps: [
         'Встаньте в Тадасану и найдите устойчивое положение.',
         'Перенесите вес тела на левую ногу.',
@@ -47,7 +47,7 @@
       time: '1-3 мин',
       level: 'для начинающих',
       effect: 'Влияние: Растягивает спину и заднюю поверхность ног, укрепляет руки и плечи.',
-      photo: 'assets/images/hatha_img_3.jpg',
+      photo: 'assets/images/asan-library-block/hatha_img_3_asan-library-block.jpg',
       steps: [
         'Встаньте на четвереньки, расположив ладони под плечами, а колени под тазом.',
         'Расставьте пальцы рук широко и плотно прижмите ладони к полу.',
@@ -64,7 +64,7 @@
       time: '1-2 мин',
       level: 'для начинающих',
       effect: 'Влияние: Укрепляет ноги, раскрывает тазобедренные суставы, развивает выносливость.',
-      photo: 'assets/images/hatha_img_4.jpg',
+      photo: 'assets/images/asan-library-block/hatha_img_4_asan-library-block.jpg',
       steps: [
         'Встаньте прямо и расставьте ноги широко в стороны.',
         'Разверните правую стопу наружу на 90 градусов, левую слегка внутрь.',
@@ -82,7 +82,7 @@
       time: '1-3 мин',
       level: 'для начинающих',
       effect: 'Влияние: Успокаивает ум, мягко растягивает бедра и спину, снимает напряжение.',
-      photo: 'assets/images/gallery/gallery_1.jpg',
+      photo: 'assets/images/asan-library-block/gallery_1_asan-library-block.jpg',
       steps: [
         'Встаньте на колени и сядьте тазом на пятки.',
         'Соедините большие пальцы ног и слегка разведите колени.',

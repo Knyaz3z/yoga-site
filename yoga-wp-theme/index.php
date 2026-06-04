@@ -39,15 +39,15 @@
             </div>
         </nav>
         <div class="header__social">
-            <img src="assets/icons/vk.svg" alt="" class="vk">
-            <img src="assets/icons/tg.svg" alt="" class="vk">
-            <img src="assets/icons/insta.svg" alt="" class="vk">
+            <a href="#" target="_blank"><img src="assets/icons/vk.svg" alt="" class="vk"></a>
+            <a href="https://t.me/Istochnik_bitiya" target="_blank"><img src="assets/icons/tg.svg" alt="" class="vk"></a>
+            <a href="https://www.instagram.com/katarinkasum" target="_blank"><img src="assets/icons/insta.svg" alt="" class="vk"></a>
         </div>
     </div>
 </header>
 
 <div class="hero">
-    <img src="assets/images/hero/main_image.jpg" alt="" class="main__image">
+    <img src="assets/images/hero/main_image_wp-hero.jpg" alt="" class="main__image">
     <div class="hero__content container">
         <button class="hero__video-btn-mobile" aria-label="Видео обо мне">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
