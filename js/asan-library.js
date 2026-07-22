@@ -82,7 +82,7 @@
       time: '1-3 мин',
       level: 'для начинающих',
       effect: 'Влияние: Успокаивает ум, мягко растягивает бедра и спину, снимает напряжение.',
-      photo: 'assets/images/asan-library-block/gallery_1_asan-library-block.jpg',
+      photo: 'assets/images/asan-library-block/hatha_img_5_asan-library-block.jpg',
       steps: [
         'Встаньте на колени и сядьте тазом на пятки.',
         'Соедините большие пальцы ног и слегка разведите колени.',

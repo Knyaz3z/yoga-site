@@ -57,6 +57,9 @@
 
 .first__image{
   width: 435px;
+  height: 133px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .arrow{

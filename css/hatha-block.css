@@ -25,6 +25,7 @@
 .hatha__photos-item {
   width: 250px;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .hatha__pic-explain {
