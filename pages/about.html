@@ -118,6 +118,13 @@
       </div>
     </div>
 
+    <div class="about-story__video-wrap">
+      <button class="about-story__video-btn hero__video-but" aria-label="Видео обо мне">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 12L6 21V3L20 12Z" fill="#fff"/></svg>
+        Смотреть видео
+      </button>
+    </div>
+
     <!-- Block 2: Journey -->
     <div class="story-block story-block--reverse">
       <div class="story-block__image-wrap">
@@ -366,6 +373,14 @@
 <!-- ===== SCRIPTS ===== -->
 <script src="../js/main.js"></script>
 <script src="../js/about-page.js"></script>
+
+<!-- ===== VIDEO MODAL ===== -->
+<div class="modal-overlay video-overlay" id="video-modal">
+  <div class="video-modal">
+    <button class="modal__close video-modal__close" aria-label="Закрыть">&times;</button>
+    <video class="video-modal__player" src="../assets/video_about.mp4" controls autoplay></video>
+  </div>
+</div>
 
 <!-- ===== MODAL ===== -->
 <div class="modal-overlay" id="form-modal">

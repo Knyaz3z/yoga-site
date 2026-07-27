@@ -56,6 +56,31 @@
   color: #C1A21B;
 }
 
+.about-story__video-wrap {
+  text-align: center;
+  margin: 40px 0 60px;
+}
+
+.about-story__video-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #2D3B2A;
+  border: none;
+  border-radius: 40px;
+  font-family: Jost ExtraLight, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  padding: 14px 32px;
+  transition: background 0.3s;
+  line-height: 100%;
+}
+
+.about-story__video-btn:hover {
+  background: #3d4f39;
+}
+
 /* ----- Story ----- */
 .about-story {
   padding: 100px 0 80px;

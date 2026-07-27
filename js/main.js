@@ -15,7 +15,8 @@ const scripts = [
   '/js/products.js',
   '/js/scroll-top.js',
   '/js/forms-validation.js',
-  '/js/modal.js'
+  '/js/modal.js',
+  '/js/video-modal.js'
 ];
 
 scripts.forEach(src => {

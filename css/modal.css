@@ -70,3 +70,46 @@
 body.modal-open {
   overflow: hidden;
 }
+
+/* ========================================
+   Video Modal
+   ======================================== */
+
+.video-overlay {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.video-modal {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s ease;
+}
+
+.video-overlay.open .video-modal {
+  transform: translateY(0) scale(1);
+}
+
+.video-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  color: #fff;
+}
+
+.video-modal__close:hover {
+  color: #ccc;
+}
+
+.video-modal__player {
+  display: block;
+  width: 100%;
+  max-height: 80vh;
+  outline: none;
+}
